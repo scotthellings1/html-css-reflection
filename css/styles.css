@@ -8,4 +8,37 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
+header {
+  min-height: 10.5rem;
+  padding: 20px 15px;
+}
+
+header .container,
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-search input {
+  min-width: 100%;
+  padding: 1em;
+  font-size: 0.875em;
+}
+
+nav {
+  height: 6.25rem;
+  background: #333645;
+  display: none;
+}
+
+.search,
+.buttons {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
