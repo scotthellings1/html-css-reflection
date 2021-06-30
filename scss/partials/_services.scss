@@ -1,0 +1,101 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  padding: 20px;
+}
+.service {
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid $grey-300;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  color: $grey-700;
+  box-shadow: 0 3px 35px rgba(0,0,0,.1);
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $grey-700;
+  }
+  span {
+    display: inline-block;
+  }
+  .icon {
+    height: 60px;
+    width: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.875rem;
+    background: $grey-700;
+    font-size: 1.1rem;
+  }
+  .heading {
+    font-size: 1.125rem;
+    margin: 1rem;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 28px;
+      bottom: -15px;
+      right: calc(50% - 14px);
+      background: $grey-700;
+    }
+  }
+  .text {
+    font-size: 0.8125rem;
+    line-height: 1.8;
+    margin-top: 10px;
+    color: $grey-700;
+    width: 100%;
+  }
+  .button {
+    width: auto;
+  }
+  &#s-bespoke {
+    .icon {
+      background: $bespoke-300;
+    }
+  }
+  &#s-support {
+    .icon {
+      background: $support-300;
+    }
+  }
+  &#s-marketing {
+    .icon {
+      background: $marketing-300;
+    }
+  }
+  &#s-telecoms {
+    .icon {
+      background: $telecoms-300;
+    }
+  }
+  &#s-web {
+    .icon {
+      background: $web-300;
+    }
+  }
+  &#s-security {
+    .icon {
+      background: $security-300;
+    }
+  }
+  &#s-developer {
+    .icon {
+      background: $web-300;
+    }
+  }
+}

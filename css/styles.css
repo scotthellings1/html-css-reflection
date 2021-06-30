@@ -10,11 +10,81 @@
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
   color: #000;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.btn i {
+  margin-left: 15px;
+}
+.btn-web {
+  background: #926FB1;
+  color: #fff;
+  margin-top: 2rem;
+}
+.btn-service-bespoke {
+  background: #67809F;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.btn-service-support {
+  background: #4183D7;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.btn-service-marketing {
+  background: #2ECC71;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.btn-service-telecoms {
+  background: #D64541;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.btn-service-security {
+  background: #F62459;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.btn-service-web {
+  background: #926FB1;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
 }
 
 body {
@@ -88,7 +158,10 @@ i.fa-phone-volume {
 }
 .banner .banner-content {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +185,19 @@ i.fa-phone-volume {
   width: 100%;
   object-fit: cover;
 }
+@media screen\0  {
+  .banner img {
+    display: none;
+  }
+}
+@media screen\0  {
+  .banner {
+    background: url("../img/web-bg.jpg");
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+}
 
 .btn-web {
   background: #926FB1;
@@ -124,6 +210,94 @@ i.fa-phone-volume {
 }
 .btn-web i {
   margin-left: 15px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  padding: 20px;
+}
+
+.service {
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  color: #333645;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.service a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333645;
+}
+.service span {
+  display: inline-block;
+}
+.service .icon {
+  height: 60px;
+  width: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.875rem;
+  background: #333645;
+  font-size: 1.1rem;
+}
+.service .heading {
+  font-size: 1.125rem;
+  margin: 1rem;
+  position: relative;
+}
+.service .heading::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 28px;
+  bottom: -15px;
+  right: calc(50% - 14px);
+  background: #333645;
+}
+.service .text {
+  font-size: 0.8125rem;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #333645;
+  width: 100%;
+}
+.service .button {
+  width: auto;
+}
+.service#s-bespoke .icon {
+  background: #67809F;
+}
+.service#s-support .icon {
+  background: #4183D7;
+}
+.service#s-marketing .icon {
+  background: #2ECC71;
+}
+.service#s-telecoms .icon {
+  background: #D64541;
+}
+.service#s-web .icon {
+  background: #926FB1;
+}
+.service#s-security .icon {
+  background: #F62459;
+}
+.service#s-developer .icon {
+  background: #926FB1;
 }
 
 /*# sourceMappingURL=styles.css.map */
