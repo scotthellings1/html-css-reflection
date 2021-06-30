@@ -1,3 +1,6 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
 header {
   min-height: 10.5rem;
   padding: 20px 15px;
@@ -12,6 +15,7 @@ header .container,
   min-width: 100%;
   padding: 1em;
   font-size: 0.875em;
+  margin-top: 15px;
 }
 
 nav {
@@ -23,4 +27,30 @@ nav {
 .search,
 .buttons {
   display: none;
+}
+
+i {
+  display: inline-block;
+
+  &.fa-phone-volume {
+    transform: rotate(-45deg);
+    font-size: 2rem;
+    margin-left: 15px
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $grey-700;
+  color: $white;
+  font-size: 0.7rem;
+  padding:  0.25rem 1rem;
+  margin-left: 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  i {
+    font-size: 2rem;
+  }
+
 }
