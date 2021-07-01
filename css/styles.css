@@ -130,7 +130,10 @@ body {
 }
 
 .container {
-  margin: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
@@ -267,6 +270,7 @@ i.fa-phone-volume {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 1.125rem;
 }
 
 .service {
@@ -441,6 +445,42 @@ i.fa-phone-volume {
 }
 .about p {
   margin-bottom: 1.5rem;
+}
+
+.latest-news > .container {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.bar .latest {
+  padding: 40px 0;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.bar .latest::after {
+  content: "";
+  height: 5px;
+  background: #333645;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.articles {
+  margin-top: 3.125rem;
+}
+
+article {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+article .article-body, article .meta {
+  padding: 1.125rem 1.9375rem;
+}
+
+.test {
+  height: 25vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

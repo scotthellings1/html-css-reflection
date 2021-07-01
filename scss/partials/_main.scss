@@ -4,7 +4,10 @@ body {
   letter-spacing: 0.4px;
 }
 .container {
-  margin: 0 15px ;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 header {
   min-height: 10.5rem;
