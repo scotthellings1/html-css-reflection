@@ -129,12 +129,16 @@ body {
   letter-spacing: 0.4px;
 }
 
+.container {
+  margin: 0 15px;
+}
+
 header {
   min-height: 10.5rem;
   padding: 20px 15px;
 }
 
-header .container,
+header .header-container,
 .actions {
   display: flex;
   align-items: center;
@@ -257,6 +261,14 @@ i.fa-phone-volume {
   padding: 20px;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .service {
   width: 100%;
   margin: 15px 0;
@@ -264,7 +276,7 @@ i.fa-phone-volume {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding: 1rem 2rem;
+  padding: 0;
   color: #333645;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
@@ -411,7 +423,7 @@ i.fa-phone-volume {
 .about {
   background-color: #333645;
   color: #fff;
-  padding: 2rem 15px;
+  padding: 2rem 0;
   line-height: 2;
 }
 .about .container {

@@ -4,6 +4,13 @@
   margin-top: 1.25rem;
   padding: 20px;
 }
+.card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .service {
   width: 100%;
   margin: 15px 0;
@@ -11,7 +18,7 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding: 1rem 2rem;
+  padding: 0;
   color: $grey-700;
   box-shadow: 0 3px 35px rgba(0,0,0,.1);
 

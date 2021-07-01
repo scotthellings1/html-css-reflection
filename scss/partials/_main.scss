@@ -3,11 +3,14 @@ body {
   font-size: 1rem;
   letter-spacing: 0.4px;
 }
+.container {
+  margin: 0 15px ;
+}
 header {
   min-height: 10.5rem;
   padding: 20px 15px;
 }
-header .container,
+header .header-container,
 .actions {
   display: flex;
   align-items: center;
