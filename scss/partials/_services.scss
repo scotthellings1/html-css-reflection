@@ -66,36 +66,113 @@
   &#s-bespoke {
     .icon {
       background: $bespoke-300;
+
     }
+   &:hover {
+     background: $bespoke-300;
+     .text, .heading, {
+       color: $white;
+     }
+     .icon, .heading::after  {
+       background: $white;
+       color: $bespoke-300;
+     }
+   }
   }
   &#s-support {
     .icon {
       background: $support-300;
+
+    }
+    &:hover {
+      background: $support-300;
+      .text, .heading, {
+        color: $white;
+      }
+      .icon, .heading::after  {
+        background: $white;
+        color: $support-300;
+      }
     }
   }
   &#s-marketing {
     .icon {
       background: $marketing-300;
+
+    }
+    &:hover {
+      background: $marketing-300;
+      .text, .heading, {
+        color: $white;
+      }
+      .icon, .heading::after  {
+        background: $white;
+        color: $marketing-300;
+      }
     }
   }
   &#s-telecoms {
     .icon {
-      background: $telecoms-300;
+      background:$telecoms-300;
+
+    }
+    &:hover {
+      background:$telecoms-300;
+      .text, .heading, {
+        color: $white;
+      }
+      .icon, .heading::after  {
+        background: $white;
+        color:$telecoms-300;
+      }
     }
   }
   &#s-web {
     .icon {
       background: $web-300;
+
+    }
+    &:hover {
+      background: $web-300;
+      .text, .heading, {
+        color: $white;
+      }
+      .icon, .heading::after  {
+        background: $white;
+        color: $web-300;
+      }
     }
   }
   &#s-security {
     .icon {
       background: $security-300;
+
+    }
+    &:hover {
+      background: $security-300;
+      .text, .heading, {
+        color: $white;
+      }
+      .icon, .heading::after  {
+        background: $white;
+        color: $security-300;
+      }
     }
   }
   &#s-developer {
     .icon {
       background: $web-300;
+
+    }
+    &:hover {
+      background: $web-300;
+      .text, .heading, {
+        color: $white;
+      }
+      .icon, .heading::after  {
+        background: $white;
+        color: $web-300;
+      }
     }
   }
 }

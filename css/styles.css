@@ -311,23 +311,93 @@ i.fa-phone-volume {
 .service#s-bespoke .icon {
   background: #67809F;
 }
+.service#s-bespoke:hover {
+  background: #67809F;
+}
+.service#s-bespoke:hover .text, .service#s-bespoke:hover .heading {
+  color: #fff;
+}
+.service#s-bespoke:hover .icon, .service#s-bespoke:hover .heading::after {
+  background: #fff;
+  color: #67809F;
+}
 .service#s-support .icon {
   background: #4183D7;
+}
+.service#s-support:hover {
+  background: #4183D7;
+}
+.service#s-support:hover .text, .service#s-support:hover .heading {
+  color: #fff;
+}
+.service#s-support:hover .icon, .service#s-support:hover .heading::after {
+  background: #fff;
+  color: #4183D7;
 }
 .service#s-marketing .icon {
   background: #2ECC71;
 }
+.service#s-marketing:hover {
+  background: #2ECC71;
+}
+.service#s-marketing:hover .text, .service#s-marketing:hover .heading {
+  color: #fff;
+}
+.service#s-marketing:hover .icon, .service#s-marketing:hover .heading::after {
+  background: #fff;
+  color: #2ECC71;
+}
 .service#s-telecoms .icon {
   background: #D64541;
+}
+.service#s-telecoms:hover {
+  background: #D64541;
+}
+.service#s-telecoms:hover .text, .service#s-telecoms:hover .heading {
+  color: #fff;
+}
+.service#s-telecoms:hover .icon, .service#s-telecoms:hover .heading::after {
+  background: #fff;
+  color: #D64541;
 }
 .service#s-web .icon {
   background: #926FB1;
 }
+.service#s-web:hover {
+  background: #926FB1;
+}
+.service#s-web:hover .text, .service#s-web:hover .heading {
+  color: #fff;
+}
+.service#s-web:hover .icon, .service#s-web:hover .heading::after {
+  background: #fff;
+  color: #926FB1;
+}
 .service#s-security .icon {
   background: #F62459;
 }
+.service#s-security:hover {
+  background: #F62459;
+}
+.service#s-security:hover .text, .service#s-security:hover .heading {
+  color: #fff;
+}
+.service#s-security:hover .icon, .service#s-security:hover .heading::after {
+  background: #fff;
+  color: #F62459;
+}
 .service#s-developer .icon {
   background: #926FB1;
+}
+.service#s-developer:hover {
+  background: #926FB1;
+}
+.service#s-developer:hover .text, .service#s-developer:hover .heading {
+  color: #fff;
+}
+.service#s-developer:hover .icon, .service#s-developer:hover .heading::after {
+  background: #fff;
+  color: #926FB1;
 }
 
 /*# sourceMappingURL=styles.css.map */
