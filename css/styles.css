@@ -32,6 +32,12 @@ a {
   color: #fff;
   margin-top: 2rem;
 }
+.btn-about {
+  background: #fff;
+  color: #333645;
+  padding: 0.7rem 1rem;
+  font-size: 1.125rem;
+}
 
 .btn-service-bespoke {
   background: #67809F;
@@ -119,6 +125,8 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
 }
 
 header {
@@ -203,7 +211,7 @@ i.fa-phone-volume {
 .banner h1 {
   text-transform: uppercase;
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 0.3em;
 }
 .banner p {
@@ -398,6 +406,29 @@ i.fa-phone-volume {
 .service#s-developer:hover .icon, .service#s-developer:hover .heading::after {
   background: #fff;
   color: #926FB1;
+}
+
+.about {
+  background-color: #333645;
+  color: #fff;
+  padding: 2rem 15px;
+  line-height: 2;
+}
+.about .container {
+  padding-right: 1.125rem;
+}
+.about h1 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.about .lead {
+  font-weight: 600;
+}
+.about p {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
