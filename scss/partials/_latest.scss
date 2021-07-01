@@ -27,8 +27,44 @@
 article {
   border: 1px solid $grey-300;
   width: 100%;
-
-  .article-body, .meta {
-    padding: 1.125rem 1.9375rem;
+  border-radius: 3px;
+  overflow: hidden;
+  .container{
+   padding: 0 30px;
   }
+  .article-body, .meta {
+    padding: 1.125rem 0 ;
+  }
+  .article-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+ .article-link {
+   color: $support-300;
+   font-weight: 600;
+   &:hover {
+     text-decoration: underline;
+   }
+ }
+  .body-text {
+    font-size: 0.8125rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .meta {
+    border-top: 1px solid $grey-300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  .info {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+  }
+}
+.logo {
+  margin-top: 10px;
 }
