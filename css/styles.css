@@ -44,6 +44,12 @@ a {
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
 }
+.btn-article-g {
+  color: #fff;
+  background: #2ECC71;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+}
 
 .btn-service-bespoke {
   background: #67809F;
@@ -482,23 +488,28 @@ article {
   width: 100%;
   border-radius: 3px;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 article .container {
-  padding: 0 30px;
+  padding: 0 27px 0 30px;
 }
 article .article-body, article .meta {
   padding: 1.125rem 0;
 }
-article .article-body {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-article .article-link {
+article .article-link-b {
   color: #4183D7;
   font-weight: 600;
+  display: inline-block;
 }
-article .article-link:hover {
+article .article-link-b:hover {
+  text-decoration: underline;
+}
+article .article-link-g {
+  color: #2ECC71;
+  font-weight: 600;
+  display: inline-block;
+}
+article .article-link-g:hover {
   text-decoration: underline;
 }
 article .body-text {

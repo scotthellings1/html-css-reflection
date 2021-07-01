@@ -29,25 +29,30 @@ article {
   width: 100%;
   border-radius: 3px;
   overflow: hidden;
+  margin-bottom: 2rem;
   .container{
-   padding: 0 30px;
+   padding: 0 27px 0 30px;
+
   }
   .article-body, .meta {
     padding: 1.125rem 0 ;
   }
-  .article-body{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-  }
- .article-link {
+ .article-link-b {
    color: $support-300;
    font-weight: 600;
+   display: inline-block;
    &:hover {
      text-decoration: underline;
    }
  }
+  .article-link-g {
+    color: $marketing-300;
+    font-weight: 600;
+    display: inline-block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   .body-text {
     font-size: 0.8125rem;
     margin-top: 1rem;
