@@ -62,14 +62,51 @@ footer {
     font-size: 0.8125rem;
     padding-top: 1rem;
     padding-bottom: 2.4rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
   }
   .copyright{
     display: flex;
     span{
-      margin: 0 0.8125rem;
+      margin: 0 0.5rem;
     }
     a {
       color: $white;
+      margin-right: 3px;
     }
+  }
+  .socials {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.9rem;
+    margin-top: -8px;
+    a{
+      color: $white;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      position: relative;
+      &:hover#fb{
+        background: #3b5998;
+      }
+      &:hover#twitter{
+        background: #00aced;
+      }
+      &:hover#insta{
+        background: #d93175;
+      }
+      &:hover#linkd{
+        background: #0077b5;
+      }
+
+    }
+    i {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      padding: 7px 8px 8px
+    }
+
   }
 }

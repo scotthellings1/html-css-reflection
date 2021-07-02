@@ -495,6 +495,14 @@ article {
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 2rem;
+  position: relative;
+}
+article img {
+  width: 100%;
+  height: auto;
+}
+article img a {
+  display: block;
 }
 article .container {
   padding: 0 27px 0 30px;
@@ -627,15 +635,50 @@ footer .bottom {
   font-size: 0.8125rem;
   padding-top: 1rem;
   padding-bottom: 2.4rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 }
 footer .copyright {
   display: flex;
 }
 footer .copyright span {
-  margin: 0 0.8125rem;
+  margin: 0 0.5rem;
 }
 footer .copyright a {
   color: #fff;
+  margin-right: 3px;
+}
+footer .socials {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 0.9rem;
+  margin-top: -8px;
+}
+footer .socials a {
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+footer .socials a:hover#fb {
+  background: #3b5998;
+}
+footer .socials a:hover#twitter {
+  background: #00aced;
+}
+footer .socials a:hover#insta {
+  background: #d93175;
+}
+footer .socials a:hover#linkd {
+  background: #0077b5;
+}
+footer .socials i {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 7px 8px 8px;
 }
 
 .test {

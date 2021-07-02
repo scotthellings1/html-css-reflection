@@ -30,6 +30,14 @@ article {
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 2rem;
+  position: relative;
+  img{
+    width: 100%;
+    height: auto;
+    a{
+      display: block;
+    }
+  }
   .container{
    padding: 0 27px 0 30px;
 
