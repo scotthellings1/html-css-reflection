@@ -1,0 +1,40 @@
+.signup {
+  background: $grey-200;
+  margin-top: 3rem;
+  color: $grey-700;
+
+  .content{
+    padding: 2rem 1.5rem;
+
+
+    h2{
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  label.required {
+    font-weight: 600;
+    line-height: 1.9;
+    &::after{
+      content: '*';
+      color: #d24d57;
+    }
+  }
+  input[type="text"] {
+    padding: 0.3125rem 0.9375rem;
+    height: 3rem;
+    border: 1px solid $grey-300;
+    margin-bottom: 1rem;
+  }
+
+}
+.subscribe {
+  margin-top: 5rem;
+
+}

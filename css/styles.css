@@ -50,6 +50,12 @@ a {
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
 }
+.btn-signup {
+  color: #fff;
+  background: #333645;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
 
 .btn-service-bespoke {
   background: #67809F;
@@ -445,7 +451,7 @@ i.fa-phone-volume {
 .about .container {
   padding-right: 1.125rem;
 }
-.about h1 {
+.about h2 {
   font-size: 2.25rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -531,6 +537,43 @@ article .info {
 
 .logo {
   margin-top: 10px;
+}
+
+.signup {
+  background: #ddd;
+  margin-top: 3rem;
+  color: #333645;
+}
+.signup .content {
+  padding: 2rem 1.5rem;
+}
+.signup .content h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.signup .input-group {
+  display: flex;
+  flex-direction: column;
+}
+.signup label.required {
+  font-weight: 600;
+  line-height: 1.9;
+}
+.signup label.required::after {
+  content: "*";
+  color: #d24d57;
+}
+.signup input[type=text] {
+  padding: 0.3125rem 0.9375rem;
+  height: 3rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.subscribe {
+  margin-top: 5rem;
 }
 
 .test {
