@@ -66,7 +66,7 @@ a {
   padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-.service:hover .btn-service-bespoke {
+.card:hover .btn-service-bespoke {
   color: #67809F;
   background: #fff;
 }
@@ -80,7 +80,7 @@ a {
   padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-.service:hover .btn-service-support {
+.card:hover .btn-service-support {
   color: #4183D7;
   background: #fff;
 }
@@ -94,7 +94,7 @@ a {
   padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-.service:hover .btn-service-marketing {
+.card:hover .btn-service-marketing {
   color: #2ECC71;
   background: #fff;
 }
@@ -108,7 +108,7 @@ a {
   padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-.service:hover .btn-service-telecoms {
+.card:hover .btn-service-telecoms {
   color: #D64541;
   background: #fff;
 }
@@ -122,7 +122,7 @@ a {
   padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-.service:hover .btn-service-web {
+.card:hover .btn-service-web {
   color: #926FB1;
   background: #fff;
 }
@@ -136,7 +136,7 @@ a {
   padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-.service:hover .btn-service-security {
+.card:hover .btn-service-security {
   color: #F62459;
   background: #fff;
 }
@@ -275,7 +275,7 @@ i.fa-phone-volume {
   margin-left: 15px;
 }
 
-.services {
+.cards {
   display: flex;
   flex-direction: column;
   margin-top: 1.25rem;
@@ -291,7 +291,7 @@ i.fa-phone-volume {
   padding: 1.125rem;
 }
 
-.service {
+.card {
   width: 100%;
   margin: 15px 0;
   border: 1px solid #ccc;
@@ -302,17 +302,17 @@ i.fa-phone-volume {
   color: #333645;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
-.service a {
+.card a {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: #333645;
 }
-.service span {
+.card span {
   display: inline-block;
 }
-.service .icon {
+.card .icon {
   height: 60px;
   width: 60px;
   -webkit-border-radius: 50%;
@@ -326,12 +326,12 @@ i.fa-phone-volume {
   background: #333645;
   font-size: 1.1rem;
 }
-.service .heading {
+.card .heading {
   font-size: 1.125rem;
   margin: 1rem;
   position: relative;
 }
-.service .heading::after {
+.card .heading::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -340,104 +340,104 @@ i.fa-phone-volume {
   right: calc(50% - 14px);
   background: #333645;
 }
-.service .text {
+.card .text {
   font-size: 0.8125rem;
   line-height: 1.8;
   margin-top: 10px;
   color: #333645;
   width: 100%;
 }
-.service .button {
+.card .button {
   width: auto;
 }
-.service#s-bespoke .icon {
+.card#s-bespoke .icon {
   background: #67809F;
 }
-.service#s-bespoke:hover {
+.card#s-bespoke:hover {
   background: #67809F;
 }
-.service#s-bespoke:hover .text, .service#s-bespoke:hover .heading {
+.card#s-bespoke:hover .text, .card#s-bespoke:hover .heading {
   color: #fff;
 }
-.service#s-bespoke:hover .icon, .service#s-bespoke:hover .heading::after {
+.card#s-bespoke:hover .icon, .card#s-bespoke:hover .heading::after {
   background: #fff;
   color: #67809F;
 }
-.service#s-support .icon {
+.card#s-support .icon {
   background: #4183D7;
 }
-.service#s-support:hover {
+.card#s-support:hover {
   background: #4183D7;
 }
-.service#s-support:hover .text, .service#s-support:hover .heading {
+.card#s-support:hover .text, .card#s-support:hover .heading {
   color: #fff;
 }
-.service#s-support:hover .icon, .service#s-support:hover .heading::after {
+.card#s-support:hover .icon, .card#s-support:hover .heading::after {
   background: #fff;
   color: #4183D7;
 }
-.service#s-marketing .icon {
+.card#s-marketing .icon {
   background: #2ECC71;
 }
-.service#s-marketing:hover {
+.card#s-marketing:hover {
   background: #2ECC71;
 }
-.service#s-marketing:hover .text, .service#s-marketing:hover .heading {
+.card#s-marketing:hover .text, .card#s-marketing:hover .heading {
   color: #fff;
 }
-.service#s-marketing:hover .icon, .service#s-marketing:hover .heading::after {
+.card#s-marketing:hover .icon, .card#s-marketing:hover .heading::after {
   background: #fff;
   color: #2ECC71;
 }
-.service#s-telecoms .icon {
+.card#s-telecoms .icon {
   background: #D64541;
 }
-.service#s-telecoms:hover {
+.card#s-telecoms:hover {
   background: #D64541;
 }
-.service#s-telecoms:hover .text, .service#s-telecoms:hover .heading {
+.card#s-telecoms:hover .text, .card#s-telecoms:hover .heading {
   color: #fff;
 }
-.service#s-telecoms:hover .icon, .service#s-telecoms:hover .heading::after {
+.card#s-telecoms:hover .icon, .card#s-telecoms:hover .heading::after {
   background: #fff;
   color: #D64541;
 }
-.service#s-web .icon {
+.card#s-web .icon {
   background: #926FB1;
 }
-.service#s-web:hover {
+.card#s-web:hover {
   background: #926FB1;
 }
-.service#s-web:hover .text, .service#s-web:hover .heading {
+.card#s-web:hover .text, .card#s-web:hover .heading {
   color: #fff;
 }
-.service#s-web:hover .icon, .service#s-web:hover .heading::after {
+.card#s-web:hover .icon, .card#s-web:hover .heading::after {
   background: #fff;
   color: #926FB1;
 }
-.service#s-security .icon {
+.card#s-security .icon {
   background: #F62459;
 }
-.service#s-security:hover {
+.card#s-security:hover {
   background: #F62459;
 }
-.service#s-security:hover .text, .service#s-security:hover .heading {
+.card#s-security:hover .text, .card#s-security:hover .heading {
   color: #fff;
 }
-.service#s-security:hover .icon, .service#s-security:hover .heading::after {
+.card#s-security:hover .icon, .card#s-security:hover .heading::after {
   background: #fff;
   color: #F62459;
 }
-.service#s-developer .icon {
+.card#s-developer .icon {
   background: #926FB1;
 }
-.service#s-developer:hover {
+.card#s-developer:hover {
   background: #926FB1;
 }
-.service#s-developer:hover .text, .service#s-developer:hover .heading {
+.card#s-developer:hover .text, .card#s-developer:hover .heading {
   color: #fff;
 }
-.service#s-developer:hover .icon, .service#s-developer:hover .heading::after {
+.card#s-developer:hover .icon, .card#s-developer:hover .heading::after {
   background: #fff;
   color: #926FB1;
 }
@@ -574,6 +574,68 @@ article .info {
 
 .subscribe {
   margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: #333645;
+  color: #fff;
+  padding-top: 1.8rem;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .services, footer .offices {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer .service, footer .office {
+  width: 225px;
+  margin-bottom: 1.5rem;
+}
+footer .service h3, footer .office h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+footer .service ul, footer .office ul {
+  list-style: none;
+  font-size: 0.8125rem;
+  line-height: 1.8;
+}
+footer .service a, footer .office a {
+  color: #fff;
+  font-size: 0.8125rem;
+}
+footer .service a:hover, footer .office a:hover {
+  text-decoration: underline;
+}
+footer .service .office, footer .office .office {
+  margin-bottom: 1.5rem;
+}
+footer .tel {
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+}
+footer .bottom {
+  margin-top: 1rem;
+  border-top: 1px solid #888;
+  font-size: 0.8125rem;
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+}
+footer .copyright {
+  display: flex;
+}
+footer .copyright span {
+  margin: 0 0.8125rem;
+}
+footer .copyright a {
+  color: #fff;
 }
 
 .test {

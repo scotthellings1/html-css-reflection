@@ -1,4 +1,4 @@
-.services {
+.cards {
   display: flex;
   flex-direction: column;
   margin-top: 1.25rem;
@@ -13,7 +13,7 @@
   width: 100%;
   padding: 1.125rem;
 }
-.service {
+.card {
   width: 100%;
   margin: 15px 0;
   border: 1px solid $grey-300;
@@ -72,7 +72,7 @@
   .button {
     width: auto;
   }
-  @mixin service-($service) {
+  @mixin card-($service) {
     .icon {
       background: #{$service};
 
@@ -90,25 +90,25 @@
   }
 
   &#s-bespoke {
-  @include service-($bespoke-300)
+  @include card-($bespoke-300)
   }
   &#s-support {
-    @include service-($support-300)
+    @include card-($support-300)
   }
   &#s-marketing {
-    @include service-($marketing-300)
+    @include card-($marketing-300)
   }
   &#s-telecoms {
-    @include service-($telecoms-300)
+    @include card-($telecoms-300)
   }
   &#s-web {
-    @include service-($web-300)
+    @include card-($web-300)
   }
   &#s-security {
-    @include service-($security-300)
+    @include card-($security-300)
   }
   &#s-developer {
-    @include service-($web-300)
+    @include card-($web-300)
   }
   //&#s-support {
   //  .icon {

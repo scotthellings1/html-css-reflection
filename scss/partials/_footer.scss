@@ -1,0 +1,75 @@
+footer {
+  background: $grey-700;
+  color: $white;
+  padding-top: 1.8rem;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .services, .offices {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+
+  .service, .office {
+    width: 225px;
+    margin-bottom: 1.5rem;
+
+    h3 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+
+
+    }
+
+    ul {
+      list-style: none;
+      font-size: 0.8125rem;
+      line-height: 1.8;
+
+    }
+
+    a {
+      color: $white;
+      font-size: 0.8125rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .office {
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  .tel {
+    margin-top: 1rem;
+    font-size: 0.8125rem;
+  }
+  .bottom {
+    margin-top: 1rem;
+    border-top: 1px solid #888;
+    font-size: 0.8125rem;
+    padding-top: 1rem;
+    padding-bottom: 2.4rem;
+  }
+  .copyright{
+    display: flex;
+    span{
+      margin: 0 0.8125rem;
+    }
+    a {
+      color: $white;
+    }
+  }
+}
