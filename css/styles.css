@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -160,7 +161,7 @@ a.btn-menu {
   color: #fff;
   background: #333645;
   font-size: 0.75rem;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.9rem;
   margin-left: 15px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -618,7 +619,7 @@ article .info {
   color: #333645;
 }
 .signup .content {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.8rem;
 }
 .signup .content h2 {
   font-weight: 400;
@@ -648,6 +649,44 @@ article .info {
 .subscribe {
   margin-top: 5rem;
   margin-bottom: 2rem;
+}
+
+.label > label {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.check-holder {
+  display: flex;
+}
+.check-holder .check {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 2em;
+  width: 2em;
+  border: 3px solid #333645;
+  display: block;
+  border-radius: 3px;
+  margin-right: 1.25em;
+  position: relative;
+}
+.check-holder input {
+  display: none;
+}
+.check-holder input:checked + .check {
+  background: #333645;
+}
+.check-holder input:checked + .check::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  top: -2px;
+}
+.check-holder .text a {
+  text-decoration: underline;
 }
 
 footer {
