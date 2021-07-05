@@ -46,19 +46,3 @@ i {
     margin-left: 15px
   }
 }
-.menu {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: $grey-700;
-  color: $white;
-  font-size: 0.7rem;
-  padding:  0.25rem 1rem;
-  margin-left: 15px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  i {
-    font-size: 2rem;
-  }
-
-}
