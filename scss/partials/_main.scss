@@ -24,6 +24,9 @@ header .header-container,
   padding: 1em;
   font-size: 0.875em;
   margin-top: 15px;
+  background: $grey-100;
+  border:2px solid $grey-200;
+  outline:1px solid $grey-200;
 }
 
 nav {
@@ -41,8 +44,27 @@ i {
   display: inline-block;
 
   &.fa-phone-volume {
-    transform: rotate(-45deg);
+    //transform: rotate(-45deg);
     font-size: 2rem;
     margin-left: 15px
   }
+}
+.fa-rotate-45 {
+  transform: rotate(-45deg);
+}
+
+.phone a {
+  color: $grey-700;
+  position: relative;
+  &:hover::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 2em;
+    background: $grey-700;
+    bottom:-4px;
+    left: 10px;
+}
+
+
 }
