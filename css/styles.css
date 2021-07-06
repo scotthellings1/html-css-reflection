@@ -245,10 +245,10 @@ header .header-container,
   background-color: transparent;
   padding: 0;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   position: absolute;
-  top: 25px;
-  right: 10px;
+  top: 23px;
+  right: 12px;
 }
 @media screen and (-ms-high-contrast: active) {
   .mobile-search .search-icon {
