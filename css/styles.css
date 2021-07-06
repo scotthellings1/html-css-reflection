@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+input[type=text]:focus-visible {
+  outline: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -581,6 +585,7 @@ article {
   overflow: hidden;
   margin-bottom: 2rem;
   position: relative;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 article .tag {
   text-transform: uppercase;
@@ -684,6 +689,11 @@ article .info {
   height: 3rem;
   border: 1px solid #ccc;
   margin-bottom: 1rem;
+}
+.signup input[type=text]:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 .subscribe {
