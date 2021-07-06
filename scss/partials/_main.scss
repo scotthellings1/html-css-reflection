@@ -11,7 +11,7 @@ body {
 }
 header {
   min-height: 10.5rem;
-  padding: 20px 15px;
+  padding: 15px 15px 0 15px;
 }
 header .header-container,
 .actions {
@@ -21,12 +21,12 @@ header .header-container,
 }
 .mobile-search {
   position: relative;
-
+  margin-bottom: 11px;
   input {
     min-width: 100%;
     padding: 1em;
     font-size: 0.875em;
-    margin-top: 15px;
+    margin-top: 11px;
     background: $grey-100;
     border: 2px solid $grey-200;
     outline: 1px solid $grey-200;

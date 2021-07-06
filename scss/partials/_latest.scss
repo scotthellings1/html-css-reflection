@@ -31,7 +31,28 @@ article {
   overflow: hidden;
   margin-bottom: 2rem;
   position: relative;
-  img{
+  .tag{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0.6rem;
+    right: 0;
+    padding: 0.133rem 0.7rem;
+    font-weight: 600;
+    a{
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &-b{
+      background: $support-300;
+    }
+    &-g{
+      background: $marketing-300;
+    }
+  }
+  img {
     width: 100%;
     height: auto;
     a{
@@ -64,7 +85,7 @@ article {
   .body-text {
     font-size: 0.8125rem;
     margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   .meta {
     border-top: 1px solid $grey-300;
