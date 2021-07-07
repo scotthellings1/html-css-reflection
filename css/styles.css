@@ -800,6 +800,11 @@ article .info {
 .clients a {
   padding: 0 1.125rem;
 }
+.clients img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
 
 .signup {
   background: #ddd;
@@ -998,6 +1003,11 @@ footer .socials i {
 }
 .accreditations .item {
   padding: 0 1.125rem;
+}
+.accreditations .item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .row + .row {
