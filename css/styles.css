@@ -23,6 +23,24 @@ a {
   color: #000;
 }
 
+.hidden-xs {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+.hidden-sm {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
 .btn {
   border-radius: 4px;
   text-transform: uppercase;
@@ -90,6 +108,11 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 768px) {
+  .btn-service-bespoke {
+    margin-top: auto;
+  }
+}
 .card:hover .btn-service-bespoke {
   color: #67809F;
   background: #fff;
@@ -102,6 +125,11 @@ a {
   margin-bottom: 1rem;
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .btn-service-support {
+    margin-top: auto;
+  }
 }
 .card:hover .btn-service-support {
   color: #4183D7;
@@ -116,6 +144,11 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 768px) {
+  .btn-service-marketing {
+    margin-top: auto;
+  }
+}
 .card:hover .btn-service-marketing {
   color: #2ECC71;
   background: #fff;
@@ -128,6 +161,11 @@ a {
   margin-bottom: 1rem;
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .btn-service-telecoms {
+    margin-top: auto;
+  }
 }
 .card:hover .btn-service-telecoms {
   color: #D64541;
@@ -142,6 +180,11 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 768px) {
+  .btn-service-web {
+    margin-top: auto;
+  }
+}
 .card:hover .btn-service-web {
   color: #926FB1;
   background: #fff;
@@ -154,6 +197,11 @@ a {
   margin-bottom: 1rem;
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .btn-service-security {
+    margin-top: auto;
+  }
 }
 .card:hover .btn-service-security {
   color: #F62459;
@@ -222,6 +270,11 @@ header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
 }
+@media screen and (min-width: 768px) {
+  header {
+    min-height: 6.875rem;
+  }
+}
 
 header .header-container,
 .actions {
@@ -259,6 +312,11 @@ header .header-container,
     border: 2px solid currentcolor;
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-search {
+    display: none;
+  }
+}
 
 nav {
   height: 6.25rem;
@@ -269,6 +327,32 @@ nav {
 .search,
 .buttons {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .search {
+    display: flex;
+    margin-right: 4.3rem;
+  }
+  .search input {
+    min-width: 100%;
+    padding: 0.5rem;
+    font-size: 0.875em;
+    background: transparent;
+    border: 1px solid #ddd;
+    height: 3.5rem;
+  }
+  .search button {
+    border: #999aa2;
+    background: #999aa2;
+    height: 3.5rem;
+    margin-right: -3.5rem;
+    color: #fff;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 1.5rem;
+    padding: 0 1.15rem;
+  }
 }
 
 i {
@@ -286,6 +370,11 @@ i.fa-phone-volume {
 .phone a {
   color: #333645;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .phone a {
+    display: none;
+  }
 }
 .phone a:hover::after {
   content: "";
@@ -306,6 +395,11 @@ i.fa-phone-volume {
   width: 100%;
   object-fit: cover;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    height: calc(100vh - 6.875rem);
+  }
 }
 .banner .banner-content {
   position: absolute;
@@ -363,10 +457,18 @@ i.fa-phone-volume {
   margin-left: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
 .cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 1.25rem;
+  margin-bottom: 1.7rem;
   padding: 15px;
 }
 
@@ -376,6 +478,7 @@ i.fa-phone-volume {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   padding: 1.125rem 1.125rem 0.9rem 1.125rem;
 }
 
@@ -390,12 +493,20 @@ i.fa-phone-volume {
   color: #333645;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
+@media screen and (min-width: 768px) {
+  .card-sm {
+    width: 47.9%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .card a {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: #333645;
+  height: 100%;
 }
 .card span {
   display: inline-block;
@@ -432,6 +543,7 @@ i.fa-phone-volume {
   font-size: 0.8125rem;
   line-height: 1.8;
   margin-top: 10px;
+  margin-bottom: 1rem;
   color: #333645;
   width: 100%;
   padding: 0em 1.4em;
@@ -554,7 +666,13 @@ i.fa-phone-volume {
   margin-bottom: 1.5rem;
 }
 
-.latest-news > .container {
+@media screen and (min-width: 768px) {
+  .latest-news {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.latest-news > .bar {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -577,6 +695,12 @@ i.fa-phone-volume {
 .articles {
   margin-top: 3.125rem;
 }
+@media screen and (min-width: 768px) {
+  .articles {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 article {
   border: 1px solid #ccc;
@@ -586,6 +710,11 @@ article {
   margin-bottom: 2rem;
   position: relative;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  article {
+    width: 47.9%;
+  }
 }
 article .tag {
   text-transform: uppercase;
@@ -615,7 +744,7 @@ article img {
 article img a {
   display: block;
 }
-article .container {
+article .card-container {
   padding: 0 27px 0 30px;
 }
 article .article-body, article .meta {
@@ -625,6 +754,7 @@ article .article-link-b {
   color: #4183D7;
   font-weight: 600;
   display: inline-block;
+  min-height: 3.3rem;
 }
 article .article-link-b:hover {
   text-decoration: underline;
@@ -633,6 +763,7 @@ article .article-link-g {
   color: #2ECC71;
   font-weight: 600;
   display: inline-block;
+  min-height: 3.3rem;
 }
 article .article-link-g:hover {
   text-decoration: underline;
@@ -658,10 +789,27 @@ article .info {
   margin-top: 10px;
 }
 
+.clients {
+  padding: 3.125rem 0;
+}
+.clients .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients a {
+  padding: 0 1.125rem;
+}
+
 .signup {
   background: #ddd;
   margin-top: 3rem;
   color: #333645;
+}
+@media screen and (min-width: 768px) {
+  .signup {
+    margin-top: 0;
+  }
 }
 .signup .content {
   padding: 2rem 1.8rem;
@@ -754,6 +902,11 @@ footer .services, footer .offices {
   width: 100%;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  footer .services, footer .offices {
+    justify-content: space-evenly;
+  }
+}
 footer .service, footer .office {
   width: 225px;
   margin-bottom: 1.5rem;
@@ -833,6 +986,22 @@ footer .socials i {
   top: 4px;
   left: 4px;
   padding: 7px 8px 8px;
+}
+
+.accreditations {
+  padding: 3.125rem 0;
+}
+.accreditations .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accreditations .item {
+  padding: 0 1.125rem;
+}
+
+.row + .row {
+  margin-top: 1.125rem;
 }
 
 .test {

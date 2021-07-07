@@ -27,6 +27,7 @@
 .btn {
   @include button(web, $white, $web-300, $web-600, 1rem, 1rem, 1.25rem) {
     margin-top: 2rem;
+
   }
   @include button(about, $grey-700, $white, $grey-100, 0.7rem, 1rem, 1.125rem);
 }
@@ -53,6 +54,9 @@
   margin-bottom: 1rem;
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
+  @media screen and (min-width: 768px) {
+    margin-top: auto;
+  }
   @at-root .card:hover & {
     color: $service;
     background: $white;

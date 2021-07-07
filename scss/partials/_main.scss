@@ -12,6 +12,9 @@ body {
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
+  @media screen and (min-width: 768px){
+    min-height: 6.875rem;
+  }
 }
 header .header-container,
 .actions {
@@ -31,6 +34,7 @@ header .header-container,
     border: 2px solid $grey-200;
     outline: 1px solid $grey-200;
     position: relative;
+
   }
 
   .search-icon {
@@ -47,6 +51,9 @@ header .header-container,
       border: 2px solid currentcolor;
     }
   }
+  @media screen and (min-width: 768px){
+    display: none;
+  }
 }
 
 
@@ -61,7 +68,33 @@ header .header-container,
   .buttons {
     display: none;
   }
+ .search{
 
+   @media screen and (min-width: 768px){
+     display: flex;
+     margin-right: 4.3rem;
+     input {
+       min-width: 100%;
+       padding:0.5rem;
+       font-size: 0.875em;
+       background: transparent;
+       border: 1px solid $grey-200;
+       height: 3.5rem;
+
+     }
+     button {
+       border: $grey-500;
+       background: $grey-500;
+       height: 3.5rem;
+       margin-right: -3.5rem;
+       color: $white;
+       border-bottom-right-radius: 3px;
+       border-top-right-radius: 3px;
+       font-size: 1.5rem;
+       padding: 0 1.15rem;
+     };
+   }
+ }
   i {
     display: inline-block;
 
@@ -78,6 +111,10 @@ header .header-container,
   .phone a {
     color: $grey-700;
     position: relative;
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+
     &:hover::after{
       content: '';
       position: absolute;

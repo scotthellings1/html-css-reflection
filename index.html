@@ -27,7 +27,7 @@
           </div>
           <div class="search">
             <input type="text" class="search-box" placeholder="Search...">
-            <button><span>icon</span></button>
+            <button><span><i class="fas fa-search"></i></span></button>
           </div>
           <div class="phone">
             <a href="#">
@@ -237,7 +237,7 @@
     <!--    end full page bg section-->
 
     <!--    start services cards section-->
-    <section class="cards">
+    <section class="cards container">
       <div id="s-bespoke" class="card">
         <a href="#">
           <div class="card-content"><span class="icon"><i class="fas fa-th"></i></span>
@@ -262,7 +262,7 @@
             <span class="btn btn-service-marketing">read more</span></div>
         </a>
       </div>
-      <div id="s-telecoms" class="card">
+      <div id="s-telecoms" class="card card-sm">
         <a href="#">
           <div class="card-content"><span class="icon"><i class="fas fa-phone-alt"></i></span>
             <span class="heading">Telecoms Support</span>
@@ -270,7 +270,7 @@
             <span class="btn btn-service-telecoms">read more</span></div>
         </a>
       </div>
-      <div id="s-web" class="card">
+      <div id="s-web" class="card card-sm">
         <a href="#">
           <div class="card-content"><span class="icon"><i class="fas fa-code"></i></span>
             <span class="heading">Web Design</span>
@@ -278,7 +278,7 @@
             <span class="btn btn-service-web">read more</span></div>
         </a>
       </div>
-      <div id="s-security" class="card">
+      <div id="s-security" class="card card-sm">
         <a href="#">
           <div class="card-content">
             <span class="icon"><i class="fas fa-shield-alt"></i></span>
@@ -288,7 +288,7 @@
           </div>
         </a>
       </div>
-      <div id="s-developer" class="card">
+      <div id="s-developer" class="card card-sm">
         <a href="#">
           <div class="card-content">
             <span class="icon"><i class="fas fa-graduation-cap"></i></span>
@@ -323,13 +323,16 @@
 
     <!--    start latest news section-->
     <section class="latest-news">
-      <div class="container ">
+
         <div class="bar">
-          <h3 class="latest">Latest</h3>
+
+          <div class="container">
+            <h3 class="latest">Latest</h3>
+          </div>
         </div>
-      </div>
-      <div class="articles">
+
         <div class="container">
+          <div class="articles">
           <article>
             <div class="tag tag-b">
               <a href="#">news</a>
@@ -337,7 +340,7 @@
             <div class="img">
               <a href="#"><img src="img/card-1.jpg" alt=""></a>
             </div>
-            <div class="container">
+            <div class="card-container">
               <div class="article-body">
                 <a class="article-link-b" href="#">Netmatters Announces The Opening Of A New Off...</a>
                 <p class="body-text">
@@ -365,7 +368,7 @@
             <div class="img">
               <a href="#"><img src="img/card-2.jpg" alt=""></a>
             </div>
-            <div class="container">
+            <div class="card-container">
               <div class="article-body">
                 <a class="article-link-g" href="#">Digital Marketing Assistant</a>
                 <p class="body-text">
@@ -386,14 +389,14 @@
             </div>
           </article>
 
-          <article>
+          <article class="hidden-sm">
             <div class="tag tag-b">
               <a href="#">news</a>
             </div>
             <div class="img">
               <a href="#"><img src="img/card-3.jpg" alt=""></a>
             </div>
-            <div class="container">
+            <div class="card-container">
               <div class="article-body">
                 <a class="article-link-b" href="#">How can I ensure a smooth transition if I swi...</a>
                 <p class="body-text">
@@ -416,7 +419,26 @@
       </div>
     </section>
     <!--    end latest news  section-->
-
+    <!--    start clients section-->
+     <section class="clients hidden-xs">
+       <div class="container">
+         <div class="wrapper">
+           <a href="#">
+             <img src="img/clients/busseys.png" alt="">
+           </a>
+           <a href="#">
+             <img src="img/clients/crane.png" alt="">
+           </a>
+           <a href="#">
+             <img src="img/clients/beat.png" alt="">
+           </a>
+           <a href="#">
+             <img src="img/clients/northern-driver.png" alt="">
+           </a>
+         </div>
+       </div>
+     </section>
+    <!--    end clients section-->
     <!--    start marketing sign up section-->
     <section class="signup">
       <div class="container">
@@ -563,7 +585,7 @@
         <div class="bottom">
           <div class="copyright">
             &copy; Copyright Netmatters Ltd. 2021
-            <br>
+            <br class="hidden-sm">
             All Rights Reserved
             <span> - </span>
             <a href="#">Sitemap</a>
@@ -577,6 +599,25 @@
         </div>
       </div>
     </footer>
+    <!--    start accreditations section-->
+    <section class="accreditations hidden-xs">
+      <div class="container">
+          <div class="row">
+            <div class="item"><img src="img/accreditations/google.png" alt=""></div>
+            <div class="item"><img src="img/accreditations/microsoft.jpg" alt=""></div>
+            <div class="item"><img src="img/accreditations/further50.jpg" alt=""></div>
+            <div class="item"><img src="img/accreditations/iso27001.jpg" alt=""></div>
+            <div class="item"><img src="img/accreditations/norfolk-carbon-charter.jpg" alt=""></div>
+          </div>
+          <div class="row">
+             <div class="item"><img src="img/accreditations/future-growth.jpg" alt=""></div>
+             <div class="item"><img src="img/accreditations/princess-royal-training.jpg" alt=""></div>
+             <div class="item"><img src="img/accreditations/skills-of-tomorrow.jpg" alt=""></div>
+             <div class="item"><img src="img/accreditations/prompt-payment-code.jpg" alt=""></div>
+          </div>
+        </div>
+    </section>
+    <!--   end accreditations section-->
 
   </body>
 </html>

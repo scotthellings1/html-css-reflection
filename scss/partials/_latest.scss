@@ -1,4 +1,9 @@
-.latest-news > .container {
+.latest-news{
+  @media screen and (min-width: 768px){
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  }
+}
+.latest-news > .bar {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -23,6 +28,10 @@
 }
 .articles{
   margin-top: 3.125rem;
+  @media screen and (min-width: 768px){
+    display: flex;
+    justify-content: space-between;
+    }
 }
 article {
   border: 1px solid $grey-300;
@@ -32,6 +41,9 @@ article {
   margin-bottom: 2rem;
   position: relative;
   box-shadow: 0 3px 35px rgba(0,0,0,.1);
+  @media screen and (min-width: 768px){
+    width: 47.9%;
+  }
   .tag{
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -60,9 +72,8 @@ article {
       display: block;
     }
   }
-  .container{
+  .card-container{
    padding: 0 27px 0 30px;
-
   }
   .article-body, .meta {
     padding: 1.125rem 0 ;
@@ -71,6 +82,7 @@ article {
    color: $support-300;
    font-weight: 600;
    display: inline-block;
+   min-height: 3.3rem;
    &:hover {
      text-decoration: underline;
    }
@@ -79,6 +91,7 @@ article {
     color: $marketing-300;
     font-weight: 600;
     display: inline-block;
+    min-height: 3.3rem;
     &:hover {
       text-decoration: underline;
     }
