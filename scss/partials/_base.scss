@@ -36,5 +36,18 @@ a {
     display: none;
   }
 }
+.hidden-md {
+  display: block;
+  @media screen and (max-width: 991px){
+    display: none;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
 
 

@@ -3,28 +3,51 @@ body {
   font-size: 1rem;
   letter-spacing: 0.4px;
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    width: 750px;
+  }
+  @media screen and (min-width: 991px) {
+    width: 970px;
+  }
 }
+
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
-  @media screen and (min-width: 768px){
+  .logo {
+    margin-right: 1.5rem;
+  }
+  @media screen and (min-width: 768px) {
     min-height: 6.875rem;
+    .header-container {
+      width: 750px;
+      margin: 15px auto;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    .header-container {
+      width: 970px;
+    }
   }
 }
+
 header .header-container,
 .actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .mobile-search {
   position: relative;
   margin-bottom: 11px;
+
   input {
     min-width: 100%;
     padding: 1em;
@@ -51,79 +74,94 @@ header .header-container,
       border: 2px solid currentcolor;
     }
   }
-  @media screen and (min-width: 768px){
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 
+.search,
+.buttons {
+  display: none;
+  }
 
-  nav {
-    height: 6.25rem;
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &  .btn{
+    margin-right: 1.4rem;
+  }
+}
+.search {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 4.3rem;
+    input {
+      min-width: 10.75rem;
+      padding: 0.5rem;
+      font-size: 0.875em;
+      background: transparent;
+      border: 1px solid $grey-200;
+      height: 3.5rem;
+      //margin-left: 1.5rem;
+      @media screen and (min-width: 991px) {
+        display: none;
+      }
+    }
+    button {
+      border: $grey-500;
+      background: $grey-500;
+      height: 3.5rem;
+      margin-right: -3.5rem;
+      color: $white;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      font-size: 1.5rem;
+      padding: 0 1.15rem;
+      &:hover {
+        background: $secondary-btn-dark;
+      }
+      @media screen and (min-width: 991px) {
+        border-radius: 3px;
+      }
+    }
+  ;
+  }
+}
+
+i {
+  display: inline-block;
+
+  &.fa-phone-volume {
+    //transform: rotate(-45deg);
+    font-size: 2rem;
+    margin-left: 15px
+  }
+}
+
+.fa-rotate-45 {
+  transform: rotate(-45deg);
+}
+
+.phone a {
+  color: $grey-700;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 2em;
     background: $grey-700;
-    display: none;
+    bottom: -4px;
+    left: 10px;
   }
 
-  .search,
-  .buttons {
-    display: none;
-  }
- .search{
 
-   @media screen and (min-width: 768px){
-     display: flex;
-     margin-right: 4.3rem;
-     input {
-       min-width: 100%;
-       padding:0.5rem;
-       font-size: 0.875em;
-       background: transparent;
-       border: 1px solid $grey-200;
-       height: 3.5rem;
-
-     }
-     button {
-       border: $grey-500;
-       background: $grey-500;
-       height: 3.5rem;
-       margin-right: -3.5rem;
-       color: $white;
-       border-bottom-right-radius: 3px;
-       border-top-right-radius: 3px;
-       font-size: 1.5rem;
-       padding: 0 1.15rem;
-     };
-   }
- }
-  i {
-    display: inline-block;
-
-    &.fa-phone-volume {
-      //transform: rotate(-45deg);
-      font-size: 2rem;
-      margin-left: 15px
-    }
-  }
-  .fa-rotate-45 {
-    transform: rotate(-45deg);
-  }
-
-  .phone a {
-    color: $grey-700;
-    position: relative;
-    @media screen and (min-width: 768px){
-      display: none;
-    }
-
-    &:hover::after{
-      content: '';
-      position: absolute;
-      height: 3px;
-      width: 2em;
-      background: $grey-700;
-      bottom:-4px;
-      left: 10px;
-    }
-
-
-  }
+}

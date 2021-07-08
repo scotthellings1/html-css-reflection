@@ -9,6 +9,12 @@
 
   .item {
     padding: 0 1.125rem;
+    &:hover > img.bw {
+      display: none;
+    }
+    &:hover > img.coloured {
+      display: block !important;
+    }
     img {
       display: block;
       width: 100%;
@@ -17,5 +23,5 @@
   }
 }
 .row + .row {
-  margin-top: 1.125rem;
+  margin-top: 2.5rem;
 }

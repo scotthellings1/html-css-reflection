@@ -10,6 +10,9 @@
   @media screen and (min-width: 768px){
     height: calc(100vh - 6.875rem);
   }
+  @media screen and (min-width: 991px) {
+    height: calc(100vh - 14.0625rem);
+  }
   .banner-content{
     position: absolute;
     top: 0;
@@ -23,6 +26,11 @@
     text-align: center;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    @media screen and (min-width: 991px) {
+      align-items: start;
+      text-align: left;
+      padding: 0 1.75rem
+    }
   }
   h1 {
     text-transform: uppercase;

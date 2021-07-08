@@ -41,6 +41,23 @@ a {
   }
 }
 
+.hidden-md {
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
 .btn {
   border-radius: 4px;
   text-transform: uppercase;
@@ -98,6 +115,34 @@ a {
 }
 .btn-signup:hover {
   background: #22242e;
+}
+
+.btn-primary {
+  background: #4183d7;
+  color: #fff;
+  padding: 0.925rem 1rem;
+  font-size: 1.125rem;
+}
+.btn-primary i {
+  margin-right: 0.65rem;
+  margin-left: 0 !important;
+}
+.btn-primary:hover {
+  background: #2a6ec6;
+}
+
+.btn-secondary {
+  background: #999aa2;
+  color: #fff;
+  padding: 0.925rem 1rem;
+  font-size: 1.125rem;
+}
+.btn-secondary i {
+  margin-right: 0.65rem;
+  margin-left: 0 !important;
+}
+.btn-secondary:hover {
+  background: #797a85;
 }
 
 .btn-service-bespoke {
@@ -218,6 +263,11 @@ a.btn-menu {
   border-radius: 3px;
   height: 3.5rem;
 }
+@media screen and (min-width: 768px) {
+  a.btn-menu {
+    margin-left: 0.5rem;
+  }
+}
 a.btn-menu:hover {
   background: #262834;
 }
@@ -265,14 +315,36 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
 
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
 }
+header .logo {
+  margin-right: 1.5rem;
+}
 @media screen and (min-width: 768px) {
   header {
     min-height: 6.875rem;
+  }
+  header .header-container {
+    width: 750px;
+    margin: 15px auto;
+  }
+}
+@media screen and (min-width: 991px) {
+  header .header-container {
+    width: 970px;
   }
 }
 
@@ -318,15 +390,18 @@ header .header-container,
   }
 }
 
-nav {
-  height: 6.25rem;
-  background: #333645;
-  display: none;
-}
-
 .search,
 .buttons {
   display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons .btn {
+  margin-right: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -335,13 +410,20 @@ nav {
     margin-right: 4.3rem;
   }
   .search input {
-    min-width: 100%;
+    min-width: 10.75rem;
     padding: 0.5rem;
     font-size: 0.875em;
     background: transparent;
     border: 1px solid #ddd;
     height: 3.5rem;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 991px) {
+  .search input {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
   .search button {
     border: #999aa2;
     background: #999aa2;
@@ -352,6 +434,14 @@ nav {
     border-top-right-radius: 3px;
     font-size: 1.5rem;
     padding: 0 1.15rem;
+  }
+  .search button:hover {
+    background: #797a85;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 991px) {
+  .search button {
+    border-radius: 3px;
   }
 }
 
@@ -386,6 +476,13 @@ i.fa-phone-volume {
   left: 10px;
 }
 
+nav {
+  height: 6.25rem;
+  background: #333645;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .banner {
   color: #fff;
   min-height: 400px;
@@ -401,6 +498,11 @@ i.fa-phone-volume {
     height: calc(100vh - 6.875rem);
   }
 }
+@media screen and (min-width: 991px) {
+  .banner {
+    height: calc(100vh - 14.0625rem);
+  }
+}
 .banner .banner-content {
   position: absolute;
   top: 0;
@@ -414,6 +516,13 @@ i.fa-phone-volume {
   text-align: center;
   background: black;
   background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+@media screen and (min-width: 991px) {
+  .banner .banner-content {
+    align-items: start;
+    text-align: left;
+    padding: 0 1.75rem;
+  }
 }
 .banner h1 {
   text-transform: uppercase;
@@ -457,12 +566,6 @@ i.fa-phone-volume {
   margin-left: 15px;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -483,7 +586,7 @@ i.fa-phone-volume {
 }
 
 .card {
-  width: 100%;
+  flex-basis: 100%;
   margin: 15px 0;
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
@@ -495,9 +598,14 @@ i.fa-phone-volume {
 }
 @media screen and (min-width: 768px) {
   .card-sm {
-    width: 47.9%;
+    flex-basis: 48%;
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 991px) {
+  .card-xs {
+    flex-basis: 31%;
   }
 }
 .card a {
@@ -648,6 +756,21 @@ i.fa-phone-volume {
   color: #fff;
   padding: 2rem 0;
   line-height: 2;
+  position: relative;
+}
+@media screen and (min-width: 991px) {
+  .about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/branded.png") no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+  }
 }
 .about .container {
   padding-right: 1.125rem;
@@ -800,6 +923,12 @@ article .info {
 .clients a {
   padding: 0 1.125rem;
 }
+.clients a:hover > .bw {
+  display: none;
+}
+.clients a:hover > .coloured {
+  display: block !important;
+}
 .clients img {
   display: block;
   width: 100%;
@@ -829,6 +958,13 @@ article .info {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 991px) {
+  .signup .input-group {
+    display: inline-flex;
+    width: 48%;
+    margin-right: 1.75rem;
+  }
+}
 .signup label.required {
   font-weight: 600;
   line-height: 1.9;
@@ -850,8 +986,13 @@ article .info {
 }
 
 .subscribe {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .subscribe {
+    margin-top: 2rem;
+  }
 }
 
 .label > label {
@@ -890,6 +1031,10 @@ article .info {
 }
 .check-holder .text a {
   text-decoration: underline;
+}
+
+.input-group + .input-group {
+  margin-right: 0;
 }
 
 footer {
@@ -1004,6 +1149,12 @@ footer .socials i {
 .accreditations .item {
   padding: 0 1.125rem;
 }
+.accreditations .item:hover > img.bw {
+  display: none;
+}
+.accreditations .item:hover > img.coloured {
+  display: block !important;
+}
 .accreditations .item img {
   display: block;
   width: 100%;
@@ -1011,7 +1162,7 @@ footer .socials i {
 }
 
 .row + .row {
-  margin-top: 1.125rem;
+  margin-top: 2.5rem;
 }
 
 .test {

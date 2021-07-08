@@ -8,6 +8,12 @@
   }
   a {
     padding: 0 1.125rem;
+    &:hover > .bw {
+      display: none;
+    }
+    &:hover > .coloured {
+      display: block !important;
+    }
   }
   img {
     display: block;
