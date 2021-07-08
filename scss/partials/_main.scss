@@ -121,6 +121,7 @@ header .header-container,
       border-top-right-radius: 3px;
       font-size: 1.5rem;
       padding: 0 1.15rem;
+      cursor: pointer;
       &:hover {
         background: $secondary-btn-dark;
       }
