@@ -9,35 +9,43 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 768px) {
+  @include mq(sm) {
     width: 750px;
   }
-  @media screen and (min-width: 991px) {
+  @include mq(md) {
     width: 970px;
+  }
+  @include mq(lg) {
+    width: 1200px;
   }
 }
 
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
-  @media screen and (min-width: 991px){
+  @include mq(md) {
     padding-top: 0;
   }
   .logo {
     margin-right: 1.5rem;
   }
-  @media screen and (min-width: 768px) {
+  @include mq(sm) {
     min-height: 6.875rem;
     .header-container {
       width: 750px;
       margin: 15px auto;
     }
   }
-  @media screen and (min-width: 991px) {
+  @include mq(md) {
     .header-container {
       width: 970px;
       min-height: 5.775rem;
       margin: 9px auto;
+    }
+  }
+  @include mq(lg) {
+    .header-container{
+    width: 1200px;
     }
   }
 }
@@ -80,7 +88,7 @@ header .header-container,
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @include mq(sm) {
     display: none;
   }
 }
@@ -101,7 +109,7 @@ header .header-container,
 }
 .search {
 
-  @media screen and (min-width: 768px) {
+  @include mq(sm) {
     display: flex;
     margin-right: 4.3rem;
     input {
@@ -112,8 +120,12 @@ header .header-container,
       border: 1px solid $grey-200;
       height: 3.5rem;
       //margin-left: 1.5rem;
-      @media screen and (min-width: 991px) {
+      @include mq(md) {
         display: none;
+      }
+      @include mq(lg) {
+        display: flex;
+        min-width: 15.75rem;
       }
     }
     button {
@@ -130,8 +142,13 @@ header .header-container,
       &:hover {
         background: $secondary-btn-dark;
       }
-      @media screen and (min-width: 991px) {
+      @include mq(md) {
         border-radius: 3px;
+
+      }
+      @include mq(lg) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
       }
     }
   ;
@@ -155,7 +172,7 @@ i {
 .phone a {
   color: $grey-700;
   position: relative;
-  @media screen and (min-width: 768px) {
+  @include mq(sm) {
     display: none;
   }
 

@@ -1,5 +1,5 @@
 .latest-news{
-  @media screen and (min-width: 768px){
+  @include mq(sm) {
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     padding-bottom: 3rem;
   }
@@ -29,7 +29,7 @@
 }
 .articles{
   margin-top: 3.125rem;
-  @media screen and (min-width: 768px){
+  @include mq(sm) {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -43,9 +43,12 @@ article {
   margin-bottom: 2rem;
   position: relative;
   box-shadow: 0 3px 35px rgba(0,0,0,.1);
-  @media screen and (min-width: 768px){
+  @include mq(sm) {
     width: 47.9%;
     margin-bottom: 0;
+  }
+  @include mq(lg) {
+    width: 31.5%;
   }
   .tag{
     text-transform: uppercase;

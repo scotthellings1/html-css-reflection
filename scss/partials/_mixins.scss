@@ -13,7 +13,29 @@
 
   }
 }
+// map of breakpoint values
+$breakpoints: (
+        sm: 767px,
+        md: 991px,
+        lg: 1259px
+);
 
+@mixin mq($breakpoint) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    // Write the media query.
+    @media screen and  (min-width: $breakpoint-value) {
+      @content;
+    }
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
 
 //set the colours for the service cards and service cards on hover
 @mixin btn-service($service) {
@@ -23,7 +45,7 @@
   margin-bottom: 1rem;
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
-  @media screen and (min-width: 768px) {
+  @include mq(sm) {
     margin-top: auto;
   }
   @at-root .card:hover & {
@@ -47,6 +69,9 @@
 // set the background colour of the sub nav, ::before and ::after elements
 @mixin subnav($color) {
   background: $color;
+  &:hover{
+    background: $color;
+  }
   &::before,
   &::after {
     background-color: $color;

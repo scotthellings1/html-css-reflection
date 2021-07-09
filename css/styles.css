@@ -58,6 +58,12 @@ a {
   display: block !important;
 }
 
+@media screen and (min-width: 1259px) {
+  .visible-lg {
+    display: block !important;
+  }
+}
+
 .btn {
   border-radius: 4px;
   text-transform: uppercase;
@@ -153,7 +159,7 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn-service-bespoke {
     margin-top: auto;
   }
@@ -171,7 +177,7 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn-service-support {
     margin-top: auto;
   }
@@ -189,7 +195,7 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn-service-marketing {
     margin-top: auto;
   }
@@ -207,7 +213,7 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn-service-telecoms {
     margin-top: auto;
   }
@@ -225,7 +231,7 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn-service-web {
     margin-top: auto;
   }
@@ -243,7 +249,7 @@ a {
   padding: 0.6rem 1rem;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn-service-security {
     margin-top: auto;
   }
@@ -263,7 +269,7 @@ a.btn-menu {
   border-radius: 3px;
   height: 3.5rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   a.btn-menu {
     margin-left: 0.5rem;
   }
@@ -315,7 +321,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     width: 750px;
   }
@@ -323,6 +329,11 @@ body {
 @media screen and (min-width: 991px) {
   .container {
     width: 970px;
+  }
+}
+@media screen and (min-width: 1259px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -338,7 +349,7 @@ header {
 header .logo {
   margin-right: 1.5rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   header {
     min-height: 6.875rem;
   }
@@ -352,6 +363,11 @@ header .logo {
     width: 970px;
     min-height: 5.775rem;
     margin: 9px auto;
+  }
+}
+@media screen and (min-width: 1259px) {
+  header .header-container {
+    width: 1200px;
   }
 }
 
@@ -391,7 +407,7 @@ header .header-container,
     border: 2px solid currentcolor;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .mobile-search {
     display: none;
   }
@@ -411,7 +427,7 @@ header .header-container,
   margin-right: 1.4rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .search {
     display: flex;
     margin-right: 4.3rem;
@@ -425,12 +441,18 @@ header .header-container,
     height: 3.5rem;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 991px) {
+@media screen and (min-width: 767px) and (min-width: 991px) {
   .search input {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) and (min-width: 1259px) {
+  .search input {
+    display: flex;
+    min-width: 15.75rem;
+  }
+}
+@media screen and (min-width: 767px) {
   .search button {
     border: #999aa2;
     background: #999aa2;
@@ -447,9 +469,15 @@ header .header-container,
     background: #797a85;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 991px) {
+@media screen and (min-width: 767px) and (min-width: 991px) {
   .search button {
     border-radius: 3px;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1259px) {
+  .search button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -469,7 +497,7 @@ i.fa-phone-volume {
   color: #333645;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .phone a {
     display: none;
   }
@@ -623,10 +651,16 @@ nav .sub-menu li a {
 nav .sub-menu.web {
   background: #79539A;
 }
+nav .sub-menu.web:hover {
+  background: #79539A;
+}
 nav .sub-menu.web::before, nav .sub-menu.web::after {
   background-color: #79539A;
 }
 nav .sub-menu.support {
+  background: #286ABD;
+}
+nav .sub-menu.support:hover {
   background: #286ABD;
 }
 nav .sub-menu.support::before, nav .sub-menu.support::after {
@@ -635,10 +669,16 @@ nav .sub-menu.support::before, nav .sub-menu.support::after {
 nav .sub-menu.telecoms {
   background: #BC2C28;
 }
+nav .sub-menu.telecoms:hover {
+  background: #BC2C28;
+}
 nav .sub-menu.telecoms::before, nav .sub-menu.telecoms::after {
   background-color: #BC2C28;
 }
 nav .sub-menu.bespoke {
+  background: #526781;
+}
+nav .sub-menu.bespoke:hover {
   background: #526781;
 }
 nav .sub-menu.bespoke::before, nav .sub-menu.bespoke::after {
@@ -647,10 +687,16 @@ nav .sub-menu.bespoke::before, nav .sub-menu.bespoke::after {
 nav .sub-menu.marketing {
   background: #24A25A;
 }
+nav .sub-menu.marketing:hover {
+  background: #24A25A;
+}
 nav .sub-menu.marketing::before, nav .sub-menu.marketing::after {
   background-color: #24A25A;
 }
 nav .sub-menu.security {
+  background: #DE0F3F;
+}
+nav .sub-menu.security:hover {
   background: #DE0F3F;
 }
 nav .sub-menu.security::before, nav .sub-menu.security::after {
@@ -668,14 +714,14 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
   position: relative;
   border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .banner {
     height: calc(100vh - 6.875rem);
   }
 }
 @media screen and (min-width: 991px) {
   .banner {
-    height: calc(100vh - 14.0625rem);
+    height: calc(100vh - 13.0625rem);
   }
 }
 .banner .banner-content {
@@ -771,7 +817,7 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
   color: #333645;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .card-sm {
     flex-basis: 48%;
     display: flex;
@@ -781,6 +827,14 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
 @media screen and (min-width: 991px) {
   .card-xs {
     flex-basis: 31%;
+  }
+}
+@media screen and (min-width: 1259px) {
+  .card-sm {
+    flex-basis: 23%;
+  }
+  .card-xs {
+    flex-basis: 31.5%;
   }
 }
 .card a {
@@ -929,7 +983,7 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
 .about {
   background-color: #333645;
   color: #fff;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
   line-height: 2;
   position: relative;
 }
@@ -964,7 +1018,13 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
   margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1259px) {
+  .about-content {
+    width: 48.5%;
+  }
+}
+
+@media screen and (min-width: 767px) {
   .latest-news {
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     padding-bottom: 3rem;
@@ -994,7 +1054,7 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
 .articles {
   margin-top: 3.125rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .articles {
     display: flex;
     justify-content: space-between;
@@ -1011,10 +1071,15 @@ article {
   position: relative;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   article {
     width: 47.9%;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1259px) {
+  article {
+    width: 31.5%;
   }
 }
 article .tag {
@@ -1118,7 +1183,7 @@ article .info {
   margin-top: 3rem;
   color: #333645;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .signup {
     margin-top: 0;
   }
@@ -1220,9 +1285,15 @@ footer {
   color: #fff;
   padding-top: 1.8rem;
 }
-footer .row {
+@media screen and (min-width: 1259px) {
+  footer .grid {
+    display: flex;
+  }
+}
+footer.row {
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
 }
 footer .services, footer .offices {
   display: flex;
@@ -1230,9 +1301,14 @@ footer .services, footer .offices {
   width: 100%;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   footer .services, footer .offices {
     justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1259px) {
+  footer .services, footer .offices {
+    justify-content: normal;
   }
 }
 footer .service, footer .office {
@@ -1339,7 +1415,7 @@ footer .socials i {
   max-width: 100%;
 }
 
-.row + .row {
+.accreditations .row + .row {
   margin-top: 2.5rem;
 }
 

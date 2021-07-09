@@ -2,11 +2,15 @@ footer {
   background: $grey-700;
   color: $white;
   padding-top: 1.8rem;
-
-  .row {
+ .grid {
+   @include mq(lg) {
+     display: flex;
+   }
+ }
+  &.row {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 0;
   }
 
   .services, .offices {
@@ -14,8 +18,11 @@ footer {
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    @media screen and (min-width: 768px){
+    @include mq(sm) {
       justify-content: space-evenly;
+    }
+    @include mq(lg) {
+      justify-content: normal;
     }
   }
 

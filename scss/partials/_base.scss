@@ -49,5 +49,10 @@ a {
 .d-block {
   display: block !important;
 }
+.visible-lg {
+  @include mq(lg){
+  display: block !important;
+  }
+}
 
 
