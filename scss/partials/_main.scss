@@ -20,6 +20,9 @@ body {
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
+  @media screen and (min-width: 991px){
+    padding-top: 0;
+  }
   .logo {
     margin-right: 1.5rem;
   }
@@ -33,6 +36,8 @@ header {
   @media screen and (min-width: 991px) {
     .header-container {
       width: 970px;
+      min-height: 5.775rem;
+      margin: 9px auto;
     }
   }
 }

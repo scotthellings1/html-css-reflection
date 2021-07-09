@@ -1,6 +1,7 @@
 .latest-news{
   @media screen and (min-width: 768px){
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    padding-bottom: 3rem;
   }
 }
 .latest-news > .bar {
@@ -31,6 +32,7 @@
   @media screen and (min-width: 768px){
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     }
 }
 article {
@@ -43,6 +45,7 @@ article {
   box-shadow: 0 3px 35px rgba(0,0,0,.1);
   @media screen and (min-width: 768px){
     width: 47.9%;
+    margin-bottom: 0;
   }
   .tag{
     text-transform: uppercase;
@@ -113,6 +116,6 @@ article {
     font-size: 0.875rem;
   }
 }
-.logo {
+.meta > .logo {
   margin-top: 10px;
 }

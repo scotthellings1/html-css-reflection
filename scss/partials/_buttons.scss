@@ -8,22 +8,6 @@
   }
 }
 
-@mixin button($selector, $color, $bg, $hover, $py, $px, $fs) {
-
-  &-#{$selector} {
-    background: $bg;
-    color: $color;
-    padding: $py $px;
-    font-size: $fs;
-    @content;
-
-    &:hover {
-      background: $hover;
-    }
-
-  }
-}
-
 .btn {
   @include button(web, $white, $web-300, $web-600, 1rem, 1rem, 1.25rem) {
     margin-top: 2rem;
@@ -63,21 +47,7 @@
 }
 
 
-@mixin btn-service($service) {
-  background: $service;
-  color: $white;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.6rem 1rem;
-  font-size: 1.1rem;
-  @media screen and (min-width: 768px) {
-    margin-top: auto;
-  }
-  @at-root .card:hover & {
-    color: $service;
-    background: $white;
-  }
-}
+
 
 .btn-service-bespoke {
   @include btn-service($bespoke-300)

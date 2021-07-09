@@ -1,0 +1,54 @@
+@mixin button($selector, $color, $bg, $hover, $py, $px, $fs) {
+
+  &-#{$selector} {
+    background: $bg;
+    color: $color;
+    padding: $py $px;
+    font-size: $fs;
+    @content;
+
+    &:hover {
+      background: $hover;
+    }
+
+  }
+}
+
+
+//set the colours for the service cards and service cards on hover
+@mixin btn-service($service) {
+  background: $service;
+  color: $white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  @media screen and (min-width: 768px) {
+    margin-top: auto;
+  }
+  @at-root .card:hover & {
+    color: $service;
+    background: $white;
+  }
+}
+// set hover state colours for main nav
+@mixin mainnav($colour) {
+  i {
+    color: $colour;
+  }
+  &:hover {
+    background: $colour;
+    i {
+      color: $white;
+    }
+  }
+}
+
+// set the background colour of the sub nav, ::before and ::after elements
+@mixin subnav($color) {
+  background: $color;
+  &::before,
+  &::after {
+    background-color: $color;
+  }
+}

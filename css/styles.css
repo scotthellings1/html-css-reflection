@@ -44,7 +44,7 @@ a {
 .hidden-md {
   display: block;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
   .hidden-md {
     display: none;
   }
@@ -330,6 +330,11 @@ header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
 }
+@media screen and (min-width: 991px) {
+  header {
+    padding-top: 0;
+  }
+}
 header .logo {
   margin-right: 1.5rem;
 }
@@ -345,6 +350,8 @@ header .logo {
 @media screen and (min-width: 991px) {
   header .header-container {
     width: 970px;
+    min-height: 5.775rem;
+    margin: 9px auto;
   }
 }
 
@@ -483,6 +490,172 @@ nav {
   margin-left: -15px;
   margin-right: -15px;
 }
+nav .sub-menu {
+  display: none;
+}
+nav .menu {
+  display: flex;
+  list-style: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+nav .menu > li {
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+nav .menu > li:hover .sub-menu {
+  display: flex;
+}
+nav .menu > li a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.12rem 0 1.125rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1;
+  position: relative;
+}
+nav .menu > li a small {
+  font-size: 0.625rem;
+  margin-top: 0.8125rem;
+  padding-bottom: 2px;
+}
+nav .menu .web i {
+  color: #926FB1;
+}
+nav .menu .web:hover {
+  background: #926FB1;
+}
+nav .menu .web:hover i {
+  color: #fff;
+}
+nav .menu .support i {
+  color: #4183D7;
+}
+nav .menu .support:hover {
+  background: #4183D7;
+}
+nav .menu .support:hover i {
+  color: #fff;
+}
+nav .menu .telecoms i {
+  color: #D64541;
+}
+nav .menu .telecoms:hover {
+  background: #D64541;
+}
+nav .menu .telecoms:hover i {
+  color: #fff;
+}
+nav .menu .bespoke i {
+  color: #67809F;
+}
+nav .menu .bespoke:hover {
+  background: #67809F;
+}
+nav .menu .bespoke:hover i {
+  color: #fff;
+}
+nav .menu .marketing i {
+  color: #2ECC71;
+}
+nav .menu .marketing:hover {
+  background: #2ECC71;
+}
+nav .menu .marketing:hover i {
+  color: #fff;
+}
+nav .menu .security i {
+  color: #F62459;
+}
+nav .menu .security:hover {
+  background: #F62459;
+}
+nav .menu .security:hover i {
+  color: #fff;
+}
+nav .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  z-index: 1;
+}
+nav .sub-menu::before, nav .sub-menu::after {
+  content: "";
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+nav .sub-menu::before {
+  right: 100%;
+}
+nav .sub-menu::after {
+  left: 100%;
+}
+nav .sub-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .sub-menu li:not(:first-child) {
+  padding-left: 1.125rem;
+}
+nav .sub-menu li:not(:last-child) a::after {
+  content: "-";
+  padding-left: 1.5rem;
+}
+nav .sub-menu li a {
+  display: block;
+  margin: 0;
+  padding: 1rem 0 1rem;
+  font-size: 0.8125rem;
+  justify-content: left;
+}
+nav .sub-menu.web {
+  background: #79539A;
+}
+nav .sub-menu.web::before, nav .sub-menu.web::after {
+  background-color: #79539A;
+}
+nav .sub-menu.support {
+  background: #286ABD;
+}
+nav .sub-menu.support::before, nav .sub-menu.support::after {
+  background-color: #286ABD;
+}
+nav .sub-menu.telecoms {
+  background: #BC2C28;
+}
+nav .sub-menu.telecoms::before, nav .sub-menu.telecoms::after {
+  background-color: #BC2C28;
+}
+nav .sub-menu.bespoke {
+  background: #526781;
+}
+nav .sub-menu.bespoke::before, nav .sub-menu.bespoke::after {
+  background-color: #526781;
+}
+nav .sub-menu.marketing {
+  background: #24A25A;
+}
+nav .sub-menu.marketing::before, nav .sub-menu.marketing::after {
+  background-color: #24A25A;
+}
+nav .sub-menu.security {
+  background: #DE0F3F;
+}
+nav .sub-menu.security::before, nav .sub-menu.security::after {
+  background-color: #DE0F3F;
+}
 
 .banner {
   color: #fff;
@@ -493,6 +666,7 @@ nav {
   width: 100%;
   object-fit: cover;
   position: relative;
+  border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 @media screen and (min-width: 768px) {
   .banner {
@@ -793,6 +967,7 @@ nav {
 @media screen and (min-width: 768px) {
   .latest-news {
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    padding-bottom: 3rem;
   }
 }
 
@@ -823,6 +998,7 @@ nav {
   .articles {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
 }
 
@@ -838,6 +1014,7 @@ article {
 @media screen and (min-width: 768px) {
   article {
     width: 47.9%;
+    margin-bottom: 0;
   }
 }
 article .tag {
@@ -909,7 +1086,7 @@ article .info {
   font-size: 0.875rem;
 }
 
-.logo {
+.meta > .logo {
   margin-top: 10px;
 }
 
