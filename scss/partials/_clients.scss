@@ -3,6 +3,9 @@
 
   .client {
     position: relative;
+    @include mq(sm) {
+      margin: 0 1rem;
+    }
     @include mq(md) {
       margin: 0 2rem;
     }

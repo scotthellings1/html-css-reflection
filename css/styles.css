@@ -1191,6 +1191,11 @@ article .info {
 .clients .client {
   position: relative;
 }
+@media screen and (min-width: 767px) {
+  .clients .client {
+    margin: 0 1rem;
+  }
+}
 @media screen and (min-width: 991px) {
   .clients .client {
     margin: 0 2rem;
