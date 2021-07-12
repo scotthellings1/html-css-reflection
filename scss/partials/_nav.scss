@@ -121,6 +121,9 @@ nav {
         padding: 1rem 0 1rem;
         font-size: 0.8125rem;
         justify-content: left;
+        @include mq(lg) {
+          font-size: 1rem;
+        }
       }
     }
 

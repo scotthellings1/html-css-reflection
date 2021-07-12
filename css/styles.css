@@ -654,6 +654,11 @@ nav .sub-menu li a {
   font-size: 0.8125rem;
   justify-content: left;
 }
+@media screen and (min-width: 1259px) {
+  nav .sub-menu li a {
+    font-size: 1rem;
+  }
+}
 nav .sub-menu.web {
   background: #79539A;
 }
