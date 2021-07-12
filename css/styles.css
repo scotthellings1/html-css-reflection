@@ -1196,6 +1196,11 @@ article .info {
     margin: 0 2rem;
   }
 }
+@media screen and (min-width: 1259px) {
+  .clients .client {
+    margin: 0 1.2rem;
+  }
+}
 .clients .client:hover .description {
   display: block;
 }
