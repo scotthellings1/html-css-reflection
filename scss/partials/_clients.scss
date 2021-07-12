@@ -1,20 +1,87 @@
 .clients {
-  padding: 3.125rem 0;
+  padding: 1.5rem 0;
 
+  .client {
+    position: relative;
+
+    &:hover .description {
+      display: block;
+    }
+
+  }
+
+  .description {
+    position: absolute;
+    bottom: 100%;
+    left: -200px;
+    right: -200px;
+    text-align: center;
+    display: none;
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 400;
+      padding-bottom: 1rem;
+      margin-bottom: 0.6875rem;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 1.8rem;
+        height: 3px;
+        margin: 0 auto;
+        background: $white;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 0.8125rem;
+    }
+    .box {
+      max-width: 260px;
+      margin: 0 auto 1.5rem;
+      background: $grey-700;
+      color: $white;
+      padding: 1.25rem;
+
+    }
+  }
+  // add arrow to bottom of hover box article below for reference
+  // https://css-tricks.com/snippets/css/css-triangle/
+ .arrow {
+   position: relative;
+   top: 80px;
+   &::after{
+     content: '';
+     width: 0;
+     height: 0;
+     border-left: 36px solid transparent;
+     border-right: 36px solid transparent;
+     border-top: 36px solid $grey-700;
+   }
+ }
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   a {
     padding: 0 1.125rem;
+
     &:hover > .bw {
       display: none;
     }
+
     &:hover > .coloured {
       display: block !important;
     }
+
   }
+
   img {
     display: block;
     width: 100%;

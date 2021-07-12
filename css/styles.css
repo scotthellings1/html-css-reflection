@@ -1181,7 +1181,63 @@ article .info {
 }
 
 .clients {
-  padding: 3.125rem 0;
+  padding: 1.5rem 0;
+}
+.clients .client {
+  position: relative;
+}
+.clients .client:hover .description {
+  display: block;
+}
+.clients .description {
+  position: absolute;
+  bottom: 100%;
+  left: -200px;
+  right: -200px;
+  text-align: center;
+  display: none;
+}
+.clients .description h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  margin-bottom: 0.6875rem;
+  position: relative;
+}
+.clients .description h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 1.8rem;
+  height: 3px;
+  margin: 0 auto;
+  background: #fff;
+}
+.clients .description p {
+  font-weight: 400;
+  font-size: 0.8125rem;
+}
+.clients .description .box {
+  max-width: 260px;
+  margin: 0 auto 1.5rem;
+  background: #333645;
+  color: #fff;
+  padding: 1.25rem;
+}
+.clients .arrow {
+  position: relative;
+  top: 80px;
+}
+.clients .arrow::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-top: 36px solid #333645;
 }
 .clients .wrapper {
   display: flex;
