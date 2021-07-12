@@ -3,8 +3,9 @@
 
   .client {
     position: relative;
-    margin: 0 2rem;
-
+    @include mq(md) {
+      margin: 0 2rem;
+    }
     &:hover .description {
       display: block;
     }
