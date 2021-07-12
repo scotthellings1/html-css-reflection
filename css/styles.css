@@ -1196,16 +1196,6 @@ article .info {
     margin: 0 1rem;
   }
 }
-@media screen and (min-width: 991px) {
-  .clients .client {
-    margin: 0 2rem;
-  }
-}
-@media screen and (min-width: 1259px) {
-  .clients .client {
-    margin: 0 1.2rem;
-  }
-}
 .clients .client:hover .description {
   display: block;
 }
@@ -1405,6 +1395,11 @@ footer .services, footer .offices {
 @media screen and (min-width: 767px) {
   footer .services, footer .offices {
     justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 767px) and (-ms-high-contrast: none), screen and (min-width: 767px) and (-ms-high-contrast: active) {
+  footer .services, footer .offices {
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1259px) {

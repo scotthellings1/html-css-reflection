@@ -6,12 +6,7 @@
     @include mq(sm) {
       margin: 0 1rem;
     }
-    @include mq(md) {
-      margin: 0 2rem;
-    }
-    @include mq(lg) {
-      margin: 0 1.2rem;
-    }
+
     &:hover .description {
       display: block;
     }

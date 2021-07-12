@@ -20,6 +20,9 @@ footer {
     flex-wrap: wrap;
     @include mq(sm) {
       justify-content: space-evenly;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+        justify-content: space-between;
+      }
     }
     @include mq(lg) {
       justify-content: normal;
