@@ -313,6 +313,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -439,6 +440,11 @@ header .header-container,
     background: transparent;
     border: 1px solid #ddd;
     height: 3.5rem;
+  }
+  .search input:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
   }
 }
 @media screen and (min-width: 767px) and (min-width: 991px) {
@@ -618,7 +624,7 @@ nav .sub-menu {
 }
 nav .sub-menu::before, nav .sub-menu::after {
   content: "";
-  width: 1000px;
+  width: 600px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -754,6 +760,7 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
 .banner p {
   font-size: 1.25rem;
   line-height: 1.7;
+  margin-bottom: 3rem;
 }
 .banner img {
   height: 100%;
@@ -988,17 +995,19 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
   position: relative;
 }
 @media screen and (min-width: 991px) {
+  .about {
+    padding: 0;
+  }
   .about-bg {
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 0;
-    bottom: 0;
     right: 0;
     height: 100%;
     width: 100%;
     background: url("../img/branded.png") no-repeat;
     background-position: 100%;
     background-size: auto 100%;
+    padding: 2rem 0 3rem;
   }
 }
 .about .container {
@@ -1090,6 +1099,7 @@ article .tag {
   right: 0;
   padding: 0.133rem 0.7rem;
   font-weight: 600;
+  z-index: 3;
 }
 article .tag a {
   color: #fff;
@@ -1106,8 +1116,23 @@ article .tag-g {
 article img {
   width: 100%;
   height: auto;
+  transition: all 250ms ease-in-out;
+  opacity: 1;
+}
+@media screen and (min-width: 991px) {
+  article img:hover {
+    transform: scale(1.1);
+    opacity: 0.75;
+  }
 }
 article img a {
+  display: block;
+}
+article .img {
+  overflow: hidden;
+}
+article .img a {
+  line-height: 0;
   display: block;
 }
 article .card-container {
@@ -1339,6 +1364,11 @@ footer .service .office, footer .office .office {
 footer .tel {
   margin-top: 1rem;
   font-size: 0.8125rem;
+}
+@media screen and (min-width: 1259px) {
+  footer .tel {
+    margin-top: 1.6rem;
+  }
 }
 footer .bottom {
   margin-top: 1rem;

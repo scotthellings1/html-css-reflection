@@ -58,6 +58,7 @@ article {
     right: 0;
     padding: 0.133rem 0.7rem;
     font-weight: 600;
+    z-index: 3;
     a{
       color: $white;
       &:hover {
@@ -74,7 +75,23 @@ article {
   img {
     width: 100%;
     height: auto;
+    transition: all 250ms ease-in-out;
+    opacity: 1;
+
+    @include mq(md) {
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.75;
+      }
+    }
     a{
+      display: block;
+    }
+  }
+  .img {
+    overflow: hidden;
+    a {
+      line-height: 0;
       display: block;
     }
   }

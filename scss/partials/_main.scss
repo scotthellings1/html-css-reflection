@@ -2,6 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
+
   @include mq(md) {
     padding-top: 0;
   }
@@ -119,6 +121,11 @@ header .header-container,
       background: transparent;
       border: 1px solid $grey-200;
       height: 3.5rem;
+      &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+      }
       //margin-left: 1.5rem;
       @include mq(md) {
         display: none;

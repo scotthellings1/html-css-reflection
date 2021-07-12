@@ -64,6 +64,9 @@ footer {
   .tel {
     margin-top: 1rem;
     font-size: 0.8125rem;
+    @include mq(lg) {
+      margin-top: 1.6rem;
+    }
   }
   .bottom {
     margin-top: 1rem;
