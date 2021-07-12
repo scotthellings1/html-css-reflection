@@ -1190,6 +1190,7 @@ article .info {
 }
 .clients .client {
   position: relative;
+  margin: 0 2rem;
 }
 .clients .client:hover .description {
   display: block;
