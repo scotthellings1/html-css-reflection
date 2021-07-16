@@ -1182,12 +1182,12 @@ article .info {
 }
 
 @media screen and (min-width: 992px) {
-  .img {
+  .img a {
     transition: all 250ms ease-in-out;
     opacity: 1;
   }
 
-  .img:hover {
+  .img a:hover {
     transform: scale(1.1);
     opacity: 0.75;
   }
