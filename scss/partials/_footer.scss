@@ -89,6 +89,9 @@ footer {
     a {
       color: $white;
       margin-right: 3px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .socials {

@@ -4,7 +4,10 @@ nav {
   background: $grey-700;
   margin-left: -15px;
   margin-right: -15px;
-
+ .container {
+   padding-left: 0;
+   padding-right: 0;
+ }
   .sub-menu {
     display: none;
   }
@@ -17,7 +20,7 @@ nav {
     justify-content: center;
     border-left: 1px solid hsla(0, 0%, 100%, .1);
     border-right: 1px solid rgba(0, 0, 0, .25);
-
+    padding-left: 0.2px;
 
     & > li {
       flex: 1;

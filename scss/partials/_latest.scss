@@ -75,15 +75,9 @@ article {
   img {
     width: 100%;
     height: auto;
-    transition: all 250ms ease-in-out;
-    opacity: 1;
 
-    @include mq(md) {
-      &:hover {
-        transform: scale(1.1);
-        opacity: 0.75;
-      }
-    }
+
+
     a{
       display: block;
     }
@@ -138,4 +132,14 @@ article {
 }
 .meta > .logo {
   margin-top: 10px;
+}
+@include mq(md) {
+  .img {
+    transition: all 250ms ease-in-out;
+    opacity: 1;
+  }
+  .img:hover  {
+    transform: scale(1.1);
+    opacity: 0.75;
+  }
 }
