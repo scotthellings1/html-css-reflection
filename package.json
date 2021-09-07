@@ -1,0 +1,28 @@
+{
+  "name": "html-css-reflection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotthellings1/html-css-reflection.git"
+  },
+  "author": "scott hellings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scotthellings1/html-css-reflection/issues"
+  },
+  "homepage": "https://github.com/scotthellings1/html-css-reflection#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "sass": "^1.39.0"
+  }
+}

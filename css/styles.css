@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -1364,7 +1363,7 @@ article .info {
 }
 .check-holder input:checked + .check::before {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f00c";
   color: #fff;
   position: absolute;
   left: 5px;
@@ -1533,5 +1532,3 @@ footer .socials i {
 .test {
   height: 25vh;
 }
-
-/*# sourceMappingURL=styles.css.map */
