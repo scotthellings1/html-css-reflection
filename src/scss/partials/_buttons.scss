@@ -13,6 +13,26 @@
     margin-top: 2rem;
 
   }
+  @include button(support, $white, $support-300, $support-600, 1rem, 1rem, 1.25rem) {
+    margin-top: 2rem;
+
+  }
+  @include button(telecoms, $white, $telecoms-300, $telecoms-600, 1rem, 1rem, 1.25rem) {
+    margin-top: 2rem;
+
+  }
+  @include button(marketing, $white, $marketing-300, $marketing-600, 1rem, 1rem, 1.25rem) {
+    margin-top: 2rem;
+
+  }
+  @include button(security, $white, $security-300, $security-600, 1rem, 1rem, 1.25rem) {
+    margin-top: 2rem;
+
+  }
+  @include button(bespoke, $white, $bespoke-300, $bespoke-600, 1rem, 1rem, 1.25rem) {
+    margin-top: 2rem;
+
+  }
   @include button(about, $grey-700, $white, $grey-100, 0.7rem, 1rem, 1.125rem);
 }
 

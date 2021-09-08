@@ -52,13 +52,17 @@
       display: none;
     }
   }
-  @media screen\0 {
-    background: url("../img/web-bg.jpg");
-    -webkit-background-size: cover;
-    background-position: center center;
-    background-size: cover;
-  }
+
+
 }
+//bg images for slider in IE
+@include bgimg(web, '../img/slider/web-bg.jpg');
+@include bgimg(support, '../img/slider/slider-support.jpg');
+@include bgimg(telecoms, '../img/slider/slider-telecoms.jpg');
+@include bgimg(bespoke, '../img/slider/slider-bespoke.jpg');
+@include bgimg(marketing, '../img/slider/slider-marketing.jpg');
+@include bgimg(security, '../img/slider/slider-security.jpg');
+
 .btn-web {
   background: $web-300;
   color: $white;

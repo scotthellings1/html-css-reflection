@@ -81,6 +81,56 @@ a {
 .btn-web:hover {
   background: #79539A;
 }
+.btn-support {
+  background: #4183D7;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.btn-support:hover {
+  background: #286ABD;
+}
+.btn-telecoms {
+  background: #D64541;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.btn-telecoms:hover {
+  background: #BC2C28;
+}
+.btn-marketing {
+  background: #2ECC71;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.btn-marketing:hover {
+  background: #24A25A;
+}
+.btn-security {
+  background: #F62459;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.btn-security:hover {
+  background: #DE0F3F;
+}
+.btn-bespoke {
+  background: #67809F;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.btn-bespoke:hover {
+  background: #526781;
+}
 .btn-about {
   background: #fff;
   color: #333645;
@@ -781,9 +831,55 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
     display: none;
   }
 }
+
 @media screen\0  {
-  .banner {
-    background: url("../img/web-bg.jpg");
+  .slide-web {
+    background: url("../img/slider/web-bg.jpg");
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen\0  {
+  .slide-support {
+    background: url("../img/slider/slider-support.jpg");
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen\0  {
+  .slide-telecoms {
+    background: url("../img/slider/slider-telecoms.jpg");
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen\0  {
+  .slide-bespoke {
+    background: url("../img/slider/slider-bespoke.jpg");
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen\0  {
+  .slide-marketing {
+    background: url("../img/slider/slider-marketing.jpg");
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen\0  {
+  .slide-security {
+    background: url("../img/slider/slider-security.jpg");
     -webkit-background-size: cover;
     background-position: center center;
     background-size: cover;
