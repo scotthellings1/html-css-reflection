@@ -594,13 +594,15 @@ i.fa-phone-volume {
 .cookie-container {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2000000;
-  height: 100vh;
+  min-height: 500px;
+  height: 100%;
   position: fixed;
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
   display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   top: 0;
   left: 0;
@@ -608,6 +610,11 @@ i.fa-phone-volume {
   bottom: 0;
   padding: 30px;
   color: #666;
+}
+.cookie-container::after {
+  content: "";
+  min-height: inherit;
+  font-size: 0;
 }
 @media screen\0  {
   .cookie-container {
