@@ -414,6 +414,13 @@ body {
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+  background-color: #fff;
 }
 @media screen and (min-width: 992px) {
   header {
@@ -589,6 +596,17 @@ i.fa-phone-volume {
   background: #333645;
   bottom: -4px;
   left: 10px;
+}
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.menu-is-open {
+  overflow: hidden;
+}
+.menu-is-open header {
+  filter: none;
 }
 
 .cookie-container {
@@ -865,7 +883,7 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
   color: #fff;
   min-height: 400px;
   height: calc(100vh - 10.5rem);
-  margin: 0;
+  margin: 13rem 0 0 0;
   padding: 0;
   width: 100%;
   object-fit: cover;
