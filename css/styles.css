@@ -81,6 +81,24 @@ a {
 .btn-web:hover {
   background: #79539A;
 }
+.btn-cookie-accept {
+  background: #926FB1;
+  color: #fff;
+  padding: 0.75rem 3.5rem;
+  font-size: 1rem;
+}
+.btn-cookie-accept:hover {
+  background: #79539A;
+}
+.btn-cookie-settings {
+  background: #999aa2;
+  color: #fff;
+  padding: 0.75rem 3.5rem;
+  font-size: 1rem;
+}
+.btn-cookie-settings:hover {
+  background: #7e808a;
+}
 .btn-support {
   background: #4183D7;
   color: #fff;
@@ -362,7 +380,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
-  overflow-x: hidden;
+  height: 100%;
+  overflow: hidden;
+}
+
+.default {
+  overflow-y: auto;
+  height: auto;
 }
 
 .container {
@@ -565,6 +589,68 @@ i.fa-phone-volume {
   background: #333645;
   bottom: -4px;
   left: 10px;
+}
+
+.cookie-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000000;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  color: #666;
+}
+@media screen\0  {
+  .cookie-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cookie-container {
+    width: 100%;
+  }
+}
+.cookie-container .cookie-box {
+  background-color: #fff;
+  border-radius: 3px;
+  position: absolute;
+  margin: auto 30px auto 30px;
+}
+.cookie-container .cookie-box .header h3 {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 1.625rem;
+  font-weight: 400;
+  color: #333645;
+}
+.cookie-container .cookie-box .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+.cookie-container .cookie-box p {
+  padding: 15px 20px;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .cookie-container .cookie-box {
+    width: 600px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
 }
 
 nav {
