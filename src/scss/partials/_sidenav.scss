@@ -8,29 +8,36 @@ $navbar-colours: (
 );
 
 .side-nav {
+  //display: none;
   position: absolute;
   top: 0;
   right: 0;
-  height: 200vh;
+  height: 100vh;
   width: 275px;
   z-index: 1000;
   background: $grey-700;
   overflow-y: auto;
   color: $white;
+  @include mq(md) {
+    width: 333px;
+  }
 
   .sidenav-container {
-    padding: 20px;
+    padding: 0 20px 20px 20px ;
     min-height: 200px;
     height: 100%;
     width: 100%;
   }
 
   .upper {
+    @include mq(md) {
+      display: none;
+    }
     .contact {
       border: 1px solid hsla(0, 0%, 100%, 0.1);
       outline: 1px solid rgba(0, 0, 0, 0.25);
       padding: 20px;
-      margin-bottom: 20px;
+      margin: 20px 0;
       border-radius: 3px;
       height: 64px;
       text-align: center;
@@ -70,9 +77,81 @@ $navbar-colours: (
     &:hover {
       @for $i from 1 through 6 {
         .panel-#{$i} {
-          background-color: lighten(#333645, 5%);
+          background-color: lighten($grey-700, 5%);
         }
       }
+    }
+  }
+
+  .mobile-nav-items {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 3px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      color: $white;
+    }
+
+    a {
+      color: $white;
+    }
+
+    li {
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 10px;
+
+      &:not(:first-child) {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+  .lower {
+    padding: 0;
+    margin: 0;
+    .category {
+      &:hover {
+        .title {
+          background-color: lighten($grey-700, 5%);
+        }
+      }
+    }
+    .title {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      padding: 15px 20px;
+      font-size: 16px;
+      margin: 0 -20px;
+    }
+    ul {
+      margin: 0 -20px;
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      color: $white;
+    }
+
+    a {
+      color: $white;
+      padding:15px 20px;
+      display:block;
+    }
+    li {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      font-size: 0.875rem;
+    }
+    ul li a::before {
+      content: "\00BB \0020";
+      padding-right: 15px;
+
     }
   }
 }

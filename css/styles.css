@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -681,24 +682,34 @@ i.fa-phone-volume {
   position: absolute;
   top: 0;
   right: 0;
-  height: 200vh;
+  height: 100vh;
   width: 275px;
   z-index: 1000;
   background: #333645;
   overflow-y: auto;
   color: #fff;
 }
+@media screen and (min-width: 992px) {
+  .side-nav {
+    width: 333px;
+  }
+}
 .side-nav .sidenav-container {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   min-height: 200px;
   height: 100%;
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .side-nav .upper {
+    display: none;
+  }
 }
 .side-nav .upper .contact {
   border: 1px solid rgba(255, 255, 255, 0.1);
   outline: 1px solid rgba(0, 0, 0, 0.25);
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   border-radius: 3px;
   height: 64px;
   text-align: center;
@@ -826,6 +837,66 @@ i.fa-phone-volume {
 }
 .side-nav .sector:hover .panel-6 {
   background-color: #3e4154;
+}
+.side-nav .mobile-nav-items {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.side-nav .mobile-nav-items ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.side-nav .mobile-nav-items a {
+  color: #fff;
+}
+.side-nav .mobile-nav-items li {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+.side-nav .mobile-nav-items li:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.side-nav .mobile-nav-items li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.side-nav .lower {
+  padding: 0;
+  margin: 0;
+}
+.side-nav .lower .category:hover .title {
+  background-color: #3e4154;
+}
+.side-nav .lower .title {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 15px 20px;
+  font-size: 16px;
+  margin: 0 -20px;
+}
+.side-nav .lower ul {
+  margin: 0 -20px;
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.side-nav .lower a {
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+}
+.side-nav .lower li {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 0.875rem;
+}
+.side-nav .lower ul li a::before {
+  content: "» ";
+  padding-right: 15px;
 }
 
 nav {
