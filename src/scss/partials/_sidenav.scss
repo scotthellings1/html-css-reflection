@@ -1,0 +1,79 @@
+$navbar-colours: (
+        '1': $web-300,
+        '2': $support-300,
+        '3': $telecoms-300,
+        '4': $bespoke-300,
+        '5': $marketing-300,
+        '6': $security-300,
+);
+
+.side-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 200vh;
+  width: 275px;
+  z-index: 1000;
+  background: $grey-700;
+  overflow-y: auto;
+  color: $white;
+
+  .sidenav-container {
+    padding: 20px;
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .upper {
+    .contact {
+      border: 1px solid hsla(0, 0%, 100%, 0.1);
+      outline: 1px solid rgba(0, 0, 0, 0.25);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      height: 64px;
+      text-align: center;
+      color: $white;
+
+      &:hover {
+        background: lighten($grey-700, 5%);
+      }
+    }
+
+    @for $i from 1 through 6 { //creates the services panels
+      .panel-#{$i} {
+        height: 112px;
+        border: 1px solid hsla(0, 0%, 100%, 0.1);
+        outline: 1px solid rgba(0, 0, 0, 0.25);
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 20px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      p:nth-child(2) {
+        font-size: 0.625rem;
+      }
+    }
+    @each $navbar-colour, $color in $navbar-colours { //colours the icons in each panel
+      .panel-#{$navbar-colour} {
+        p:nth-child(1) {
+          color: $color;
+        }
+      }
+    }
+  }
+
+  .sector {
+    &:hover {
+      @for $i from 1 through 6 {
+        .panel-#{$i} {
+          background-color: lighten(#333645, 5%);
+        }
+      }
+    }
+  }
+}
+
