@@ -1,5 +1,6 @@
 "use strict";
 
+// cookie policy popup notification
 var modal = document.querySelector('.cookie-container');
 var body = document.querySelector('body');
 
@@ -13,24 +14,31 @@ if (localStorage.getItem('cookie') === null) {
 } else {
   modal.style.display = 'none';
   body.classList.add('default');
-}
+} // sticky header
 
-let lastScroll = 0;
-window.addEventListener("scroll", function () {
-  let currentScroll = window.pageYOffset;
-  
-  if (currentScroll <= 0) {
-    body.classList.remove("scroll-up");
-    return;
-  }
 
-  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-    body.classList.remove("scroll-up");
-    body.classList.add("scroll-down");
-  } else if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-    body.classList.remove("scroll-down");
-    body.classList.add("scroll-up");
-  }
+(function () {
+  var lastScroll = 0;
+  window.addEventListener("scroll", function () {
+    var currentScroll = window.pageYOffset;
 
-  lastScroll = currentScroll;
-});
+    if (currentScroll <= 0) {
+      body.classList.remove("scroll-up");
+      return;
+    }
+
+    if (currentScroll > 300) {
+      if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-up");
+        body.classList.add("scroll-down");
+      } else if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+        setTimeout(function () {
+          body.classList.remove("scroll-down");
+          body.classList.add("scroll-up");
+        }, 250);
+      }
+    }
+
+    lastScroll = currentScroll;
+  });
+})();

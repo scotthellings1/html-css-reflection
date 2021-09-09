@@ -414,7 +414,7 @@ body {
 header {
   min-height: 10.5rem;
   padding: 15px 15px 0 15px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -599,14 +599,13 @@ i.fa-phone-volume {
 }
 
 .scroll-down header {
+  position: fixed;
   transform: translate3d(0, -100%, 0);
 }
 
-.menu-is-open {
-  overflow: hidden;
-}
-.menu-is-open header {
-  filter: none;
+.scroll-up header {
+  position: fixed;
+  transform: translate3d(0, 0, 0);
 }
 
 .cookie-container {

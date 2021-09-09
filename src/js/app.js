@@ -1,3 +1,5 @@
+// cookie policy popup notification
+
 const modal = document.querySelector('.cookie-container')
 const body = document.querySelector('body')
 if (localStorage.getItem('cookie') === null) {
@@ -12,24 +14,31 @@ if (localStorage.getItem('cookie') === null) {
   body.classList.add('default')
 }
 
-let lastScroll = 0;
-
-window.addEventListener("scroll", function()  {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= 0) {
-    body.classList.remove("scroll-up");
-    return;
-  }
+// sticky header
+( () => {
+  let lastScroll = 0;
   
-  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-    body.classList.remove("scroll-up");
-    body.classList.add("scroll-down");
-  } else if (
-    currentScroll < lastScroll &&
-    body.classList.contains("scroll-down")
-  ) {
-    body.classList.remove("scroll-down");
-    body.classList.add("scroll-up");
-  }
-  lastScroll = currentScroll;
-});
+  window.addEventListener("scroll", function() {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) {
+      body.classList.remove("scroll-up");
+      return;
+    }
+    if (currentScroll > 300) {
+      if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-up");
+        body.classList.add("scroll-down");
+      } else if (
+        currentScroll < lastScroll &&
+        body.classList.contains("scroll-down")
+      ) {
+        setTimeout(()=>{
+          body.classList.remove("scroll-down");
+          body.classList.add("scroll-up")
+        },250)
+      }
+    }
+    lastScroll = currentScroll;
+  });
+  
+})()
