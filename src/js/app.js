@@ -42,3 +42,12 @@ if (localStorage.getItem('cookie') === null) {
   });
   
 })()
+
+const mb = document.querySelector('.btn-menu')
+const overlay = document.querySelector('.site-overlay')
+mb.addEventListener('click', ()=> {
+  body.style.overflowY = "hidden"
+})
+overlay.addEventListener('click', () => {
+  body.style.overflowY = "auto"
+})

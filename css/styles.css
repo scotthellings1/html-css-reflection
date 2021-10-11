@@ -383,6 +383,7 @@ body {
   letter-spacing: 0.4px;
   height: 100%;
   overflow: hidden;
+  background: #ffffff;
 }
 
 .default {
@@ -679,12 +680,11 @@ i.fa-phone-volume {
 }
 
 .side-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 275px;
-  z-index: 1000;
   background: #333645;
   overflow-y: auto;
   color: #fff;

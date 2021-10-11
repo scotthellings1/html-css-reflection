@@ -8,7 +8,7 @@ const  paths = {
     dest: './css/'
   },
   scripts : {
-    src: './src/js/app.js',
+    src: ['./src/js/app.js', './src/js/pushy.js'],
     dest: './js/'
   }
 }

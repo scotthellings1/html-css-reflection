@@ -9,12 +9,11 @@ $navbar-colours: (
 
 .side-nav {
   //display: none;
-  position: absolute;
+  position:fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 275px;
-  z-index: 1000;
   background: $grey-700;
   overflow-y: auto;
   color: $white;

@@ -42,3 +42,12 @@ if (localStorage.getItem('cookie') === null) {
     lastScroll = currentScroll;
   });
 })();
+
+var mb = document.querySelector('.btn-menu');
+var overlay = document.querySelector('.site-overlay');
+mb.addEventListener('click', function () {
+  body.style.overflowY = "hidden";
+});
+overlay.addEventListener('click', function () {
+  body.style.overflowY = "auto";
+});
