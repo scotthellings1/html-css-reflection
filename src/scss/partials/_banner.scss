@@ -2,7 +2,13 @@
   color: $white;
   min-height: 400px;
   height: calc(100vh - 10.5rem);
-  margin: 13rem 0 0 0 ;
+  margin: 10.5rem 0 0 0 ;
+  @include mq(sm) {
+    margin: 6.875rem 0 0 0 ;
+  }
+  @include mq(md){
+    margin: 13rem 0 0 0 ;
+  }
   padding: 0;
   width:100%;
   object-fit: cover;
@@ -12,7 +18,7 @@
     height: calc(100vh - 6.875rem);
   }
   @include mq(md) {
-    height: calc(100vh - 13.0625rem);
+    height: calc(100vh - 13rem);
   }
   .banner-content{
     position: absolute;

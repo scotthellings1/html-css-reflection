@@ -142,11 +142,11 @@ $breakpoints: (
 .main,
 .pushy,
 .push{
-    transition: transform .2s cubic-bezier(.16, .68, .43, .99);
+    transition: transform .6s cubic-bezier(.16, .68, .43, .99);
 }
 
 .pushy-content{
-    transition: visibility .2s cubic-bezier(.16, .68, .43, .99);
+    transition: visibility .6s cubic-bezier(.16, .68, .43, .99);
 }
 
 /* Site Overlay */
@@ -186,11 +186,11 @@ $breakpoints: (
 .pushy-submenu{
     > ul{
         padding-left: 15px;
-        transition: max-height 0.2s ease-in-out,
-                    visibility 0.2s ease-in-out;
+        transition: max-height 0.6s ease-in-out,
+                    visibility 0.6s ease-in-out;
 
         .pushy-link{
-            transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.6s ease-in-out;
         }
     }
 
@@ -229,7 +229,7 @@ $breakpoints: (
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        transition: transform 0.2s;
+        transition: transform 0.6s;
     }
 }
 
