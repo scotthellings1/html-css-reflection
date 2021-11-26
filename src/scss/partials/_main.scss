@@ -46,6 +46,19 @@ header {
   }
   .logo {
     margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(sm) {
+      padding-top: 8px;
+    }
+    @include mq(md) {
+      padding-top: 7px;
+    }
+    a {
+      display: inline-block;
+      height: 100%;
+    }
   }
   @include mq(sm) {
     min-height: 6.375rem;

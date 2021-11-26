@@ -45,9 +45,12 @@ if (localStorage.getItem('cookie') === null) {
 
 var mb = document.querySelector('.btn-menu');
 var overlay = document.querySelector('.site-overlay');
+var hamburger = document.querySelector('.hamburger');
 mb.addEventListener('click', function () {
+  hamburger.classList.toggle('is-active');
   body.style.overflowY = "hidden";
 });
 overlay.addEventListener('click', function () {
   body.style.overflowY = "auto";
+  hamburger.classList.toggle('is-active');
 });

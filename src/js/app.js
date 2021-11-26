@@ -45,9 +45,12 @@ if (localStorage.getItem('cookie') === null) {
 
 const mb = document.querySelector('.btn-menu')
 const overlay = document.querySelector('.site-overlay')
+const hamburger = document.querySelector('.hamburger')
 mb.addEventListener('click', ()=> {
+  hamburger.classList.toggle('is-active')
   body.style.overflowY = "hidden"
 })
 overlay.addEventListener('click', () => {
   body.style.overflowY = "auto"
+  hamburger.classList.toggle('is-active')
 })
