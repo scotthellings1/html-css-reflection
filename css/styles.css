@@ -1206,12 +1206,14 @@ body {
   font-size: 1rem;
   letter-spacing: 0.4px;
   height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: #ffffff;
 }
 
 .default {
   overflow-y: auto;
+  overflow-x: hidden;
   height: auto;
 }
 
@@ -1243,7 +1245,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
   z-index: 10;
   transition: all 300ms ease-in-out;
   background-color: #fff;
@@ -1990,7 +1992,6 @@ nav .sub-menu.security::before, nav .sub-menu.security::after {
   .banner .banner-content {
     align-items: start;
     text-align: left;
-    padding: 0 1.75rem;
   }
 }
 .banner h1 {

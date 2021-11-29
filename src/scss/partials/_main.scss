@@ -3,7 +3,8 @@ body {
   font-size: 1rem;
   letter-spacing: 0.4px;
   height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: #ffffff;
 
 }
@@ -12,6 +13,7 @@ body {
 }
 .default {
   overflow-y:auto ;
+  overflow-x: hidden;
   height: auto;
 }
 
@@ -37,7 +39,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
   z-index: 10;
   transition: all 300ms ease-in-out;
   background-color: $white;

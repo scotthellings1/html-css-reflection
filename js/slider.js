@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 4000,
@@ -7,5 +7,5 @@ $(document).ready(function(){
     pauseOnDotsHover: false,
     pauseOnHover: false,
     pauseOnFocus: false
-});
-});
+  })
+})

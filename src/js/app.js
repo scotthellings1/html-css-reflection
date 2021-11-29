@@ -47,10 +47,14 @@ const mb = document.querySelector('.btn-menu')
 const overlay = document.querySelector('.site-overlay')
 const hamburger = document.querySelector('.hamburger')
 mb.addEventListener('click', ()=> {
+  $('.slider').slick('slickNext')
+  $('.slider').slick('slickPause')
+  $('.slider').slick('setPosition')
   hamburger.classList.toggle('is-active')
   body.style.overflowY = "hidden"
 })
 overlay.addEventListener('click', () => {
+  $('.slider').slick('slickPlay')
   body.style.overflowY = "auto"
   hamburger.classList.toggle('is-active')
 })
