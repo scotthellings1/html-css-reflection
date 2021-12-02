@@ -2,7 +2,11 @@
     background: #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, .10);
     padding: 14px 0 13px;
-    margin-top: 11.5rem;
+    margin-top: 4.8rem;
+    border-top: 1px solid black;
+    @include mq(md) {
+        margin-top: 11.5rem;
+    }
  ul {
      list-style: none;
      font-size: 0.8125rem;
@@ -15,11 +19,32 @@
    &:nth-child(2)::before {
        content: '/';
        padding: 0 5px;
-   }  
+   } 
+   & a:hover {
+       text-decoration: underline;
+   } 
  }
 }
-.contact-offices{
+.dark-heading{
+    @include mq(md){
+        display: none;
+    }
+    background: $grey-700;
+    padding: 1rem 0;
+    color: #fff;
+    margin-bottom: 50px;
     h1 {
+     font-weight: 400;
+     font-size: 2.25rem;
+
+    }
+}
+.contact-offices{
+    .desktop-heading  {
+        @include mq(md) {
+            display: block;
+        }
+        display: none;
       padding-top: 50px;
       font-size: 2.25rem;
       font-weight: normal;
@@ -54,14 +79,17 @@
     display: flex;
     flex-wrap: wrap;
     color: #333645;
-   
     justify-content: space-between;
     margin-top: 1.25rem;
     margin-bottom: 1.7rem;
 }
 .location {
-    flex-basis: 31.5%;
+    flex-basis: 100%;
+    @include mq(md) {
+        flex-basis: 31.5%;
+    }
     border:  1px solid #ccc;
+    margin-bottom: 2rem;
     border-radius: 3px;
     box-shadow: 0  3px 35px rgba(0, 0, 0, 0.10);
     .content {
@@ -72,4 +100,72 @@
 {
     margin-top: 15px;
     min-height: 300px;
+}
+.contact-info {
+    font-weight: 600;
+    color: $grey-700;
+    .email, .email-address, .business-hours, .times, .out-of-hours {
+        margin-bottom: 25px;
+    }
+    .email-address a {
+        color: $web-300;
+        font-size: 1.625rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .down-chevron {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+    }
+    .out-of-hours {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.contact-form {
+ background: #e6e7e9;  
+ padding: 30px; 
+ color: $grey-700;
+ border-radius: 10px;
+ margin-bottom: 50px;
+ .input-group {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+      display: inline-flex;
+      width: 48%;
+      margin-right: 1.75rem;
+    }
+  }
+
+  label.required {
+    font-weight: 600;
+    line-height: 1.9;
+
+    &::after {
+      content: '*';
+      color: #d24d57;
+    }
+  }
+
+  input[type="text"], textarea {
+    padding: 0.3125rem 0.9375rem;
+    height: 3rem;
+    border: 1px solid $grey-300;
+    margin-bottom: 1rem;
+    &:focus {
+      border-color: #5bc0de;
+      outline: 0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.8), 0 0 8px rgba(91, 192, 222, 0.60);
+    }
+  }
+  textarea {
+      min-height: 100px;
+  }
+  .submit {
+      margin: 40px 0 13px 0;
+  }
 }
