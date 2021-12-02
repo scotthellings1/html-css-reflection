@@ -13,6 +13,11 @@
     margin-top: 2rem;
 
   }
+
+  @include button(contact-card, $white, $web-300, $web-600, 14px, 34px, 0.9rem) {
+    margin-top: 2rem;
+
+  }
   @include button(cookie-accept, $white, $web-300, $web-600, 0.75rem, 3.5rem, 1rem) {
 
   }

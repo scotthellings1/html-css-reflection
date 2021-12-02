@@ -7,15 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/pushy.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
     <link rel="stylesheet" href="css/styles.css">
     <title> Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
     <script src="https://kit.fontawesome.com/ae8cc9698e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="" defer></script>
     <script type="text/javascript" src="js/slick/slick.min.js" defer></script>
     <script src="js/slider.js" defer></script>
     <script src="js/pushy.js" defer></script>
@@ -359,7 +365,7 @@
 
 <!--    main site wrapper-->
     <div class="main">
-    <!-- <header>
+     <header>
       <div class="header-container">
         <div class="logo">
           <a href="#">
@@ -594,17 +600,52 @@
                     <div class="content">
                         <h2>Cambridge Office</h2>
 
-                        <address>
+                        <div class="address">
                             unit 1.28, <br>
                             St John's Innovation Centre,<br>
                             Cowley Road, Milton,<br>
                             Cambridge,<br>
                             CB4 0WS <br>   
+                        </div>   
                         </address>
-                        <div class="tel">01223 37 57 72</div>
-                        <a class="btn btn-service-web" href="#"> view more</a>
+                        <div class="tel"><a href="#"> 01223 37 57 72</a></div>
+                        <a class="btn btn-contact-card" href="#"> view more</a>
                     </div>
-                    <div class="map"></div>
+                    <div id="map-c" class="map"></div>
+                </div>
+                <div class="location">
+                    <img src="img/offices/wymondham.jpg" alt="Wymondham Office">
+                    <div class="content">
+                        <h2>Wymondham Office</h2>
+
+                        <div class="address">
+                            Unit 15, <br>
+                            Penfold Drive, <br>
+                            Gateway 11 Business Park, <br>
+                            Wymondham, Norfolk, <br>
+                            NR18 0WZ  
+                        </div>
+                        <div class="tel"><a href="#" >01603 70 40 20</a> </div>
+                        <a class="btn btn-contact-card" href="#"> view more</a>
+                    </div>
+                    <div id="map-w" class="map"></div>
+                </div>
+                <div class="location">
+                    <img src="img/offices/yarmouth-2.jpg" alt="Great Yarmouth Office">
+                    <div class="content">
+                        <h2>Great Yarmouth Office</h2>
+
+                        <div class="address">
+                            Suite F23, <br>   
+                            Beacon Innovation Centre,<br>
+                            Beacon Park, Gorleston,<br>
+                            Great Yarmouth, Norfolk,<br>
+                            NR31 7RA   
+                        </div>
+                        <div class="tel"><a href="#">01493 60 32 04</a></div>
+                        <a class="btn btn-contact-card" href="#"> view more</a>
+                    </div>
+                    <div id="map-gy" class="map"></div>
                 </div>
         </div>
     </section>

@@ -3,7 +3,6 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
   margin-top: 1.25rem;
   margin-bottom: 1.7rem;
@@ -109,7 +108,7 @@
     }
     &:hover {
       background: #{$service};
-      .text, .heading, {
+      .text, .heading {
         color: $white;
       }
       .icon, .heading::after  {
