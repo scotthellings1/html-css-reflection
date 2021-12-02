@@ -3996,44 +3996,45 @@ footer .socials i {
 .map {
   margin-top: 15px;
   min-height: 300px;
+  z-index: 1;
 }
 
-/* line 104, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 105, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-info {
   font-weight: 600;
   color: #333645;
 }
 
-/* line 107, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 108, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-info .email, .contact-info .email-address, .contact-info .business-hours, .contact-info .times, .contact-info .out-of-hours {
   margin-bottom: 25px;
 }
 
-/* line 110, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 111, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-info .email-address a {
   color: #926FB1;
   font-size: 1.625rem;
 }
 
-/* line 113, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 114, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-info .email-address a:hover {
   text-decoration: underline;
 }
 
-/* line 117, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 118, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-info .down-chevron {
   height: 20px;
   width: 20px;
   margin-left: 5px;
 }
 
-/* line 122, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 123, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-info .out-of-hours {
   display: flex;
   align-items: center;
 }
 
-/* line 128, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 129, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form {
   background: #e6e7e9;
   padding: 30px;
@@ -4042,34 +4043,58 @@ footer .socials i {
   margin-bottom: 50px;
 }
 
-/* line 134, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 135, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form .input-group {
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (min-width: 992px) {
-  /* line 134, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+@media screen and (min-width: 768px) {
+  /* line 135, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
   .contact-form .input-group {
     display: inline-flex;
-    width: 48%;
+    width: 100%;
     margin-right: 1.75rem;
   }
 }
 
-/* line 144, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+@media screen and (min-width: 992px) {
+  /* line 135, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+  .contact-form .input-group {
+    display: inline-flex;
+    width: 48%;
+  }
+}
+
+/* line 148, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+.contact-form .input-group.message {
+  width: 100%;
+  margin-right: 1.75rem;
+}
+
+/* line 152, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+.contact-form .input-group:nth-child(2) {
+  margin-right: 0;
+}
+
+/* line 155, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+.contact-form .input-group:nth-child(4) {
+  margin-right: 0;
+}
+
+/* line 161, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form label.required {
   font-weight: 600;
   line-height: 1.9;
 }
 
-/* line 148, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 165, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form label.required::after {
   content: '*';
   color: #d24d57;
 }
 
-/* line 154, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 171, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form input[type="text"], .contact-form textarea {
   padding: 0.3125rem 0.9375rem;
   height: 3rem;
@@ -4077,19 +4102,19 @@ footer .socials i {
   margin-bottom: 1rem;
 }
 
-/* line 159, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 176, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form input[type="text"]:focus, .contact-form textarea:focus {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 165, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 182, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form textarea {
   min-height: 100px;
 }
 
-/* line 168, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
+/* line 186, ../../../code/html-css-reflection/src/scss/partials/_contact.scss */
 .contact-form .submit {
   margin: 40px 0 13px 0;
 }
