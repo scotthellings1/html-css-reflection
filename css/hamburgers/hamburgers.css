@@ -5,6 +5,7 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+/* line 3, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger {
   padding: 15px 12px;
   display: inline-block;
@@ -20,18 +21,25 @@
   margin: 0;
   overflow: visible;
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger:hover {
   opacity: 1;
 }
+
+/* line 31, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger.is-active:hover {
   opacity: 1;
 }
+
+/* line 40, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
   background-color: #fff;
 }
 
+/* line 48, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger-box {
   width: 35px;
   height: 21px;
@@ -39,11 +47,14 @@
   position: relative;
 }
 
+/* line 55, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger-inner {
   display: block;
   top: 50%;
   margin-top: -1.5px;
 }
+
+/* line 60, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 35px;
   height: 3px;
@@ -54,189 +65,274 @@
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
+
+/* line 73, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block;
 }
+
+/* line 79, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger-inner::before {
   top: -9px;
 }
+
+/* line 83, ../../../code/html-css-reflection/src/scss/hamburgers/_base.scss */
 .hamburger-inner::after {
   bottom: -9px;
 }
 
 /*
- * 3DX
- */
+   * 3DX
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx.scss */
 .hamburger--3dx .hamburger-box {
   perspective: 70px;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx.scss */
 .hamburger--3dx .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 14, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx.scss */
 .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx.scss */
 .hamburger--3dx.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateY(180deg);
 }
+
+/* line 25, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx.scss */
 .hamburger--3dx.is-active .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx.scss */
 .hamburger--3dx.is-active .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 
 /*
- * 3DX Reverse
- */
+   * 3DX Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx-r.scss */
 .hamburger--3dx-r .hamburger-box {
   perspective: 70px;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx-r.scss */
 .hamburger--3dx-r .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 14, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx-r.scss */
 .hamburger--3dx-r .hamburger-inner::before, .hamburger--3dx-r .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx-r.scss */
 .hamburger--3dx-r.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateY(-180deg);
 }
+
+/* line 25, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx-r.scss */
 .hamburger--3dx-r.is-active .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dx-r.scss */
 .hamburger--3dx-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 
 /*
- * 3DY
- */
+   * 3DY
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy.scss */
 .hamburger--3dy .hamburger-box {
   perspective: 70px;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy.scss */
 .hamburger--3dy .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 14, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy.scss */
 .hamburger--3dy .hamburger-inner::before, .hamburger--3dy .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy.scss */
 .hamburger--3dy.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(-180deg);
 }
+
+/* line 25, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy.scss */
 .hamburger--3dy.is-active .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy.scss */
 .hamburger--3dy.is-active .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 
 /*
- * 3DY Reverse
- */
+   * 3DY Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy-r.scss */
 .hamburger--3dy-r .hamburger-box {
   perspective: 70px;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy-r.scss */
 .hamburger--3dy-r .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 14, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy-r.scss */
 .hamburger--3dy-r .hamburger-inner::before, .hamburger--3dy-r .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy-r.scss */
 .hamburger--3dy-r.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(180deg);
 }
+
+/* line 25, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy-r.scss */
 .hamburger--3dy-r.is-active .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dy-r.scss */
 .hamburger--3dy-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 
 /*
- * 3DXY
- */
+   * 3DXY
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy.scss */
 .hamburger--3dxy .hamburger-box {
   perspective: 70px;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy.scss */
 .hamburger--3dxy .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 14, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy.scss */
 .hamburger--3dxy .hamburger-inner::before, .hamburger--3dxy .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy.scss */
 .hamburger--3dxy.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(180deg) rotateY(180deg);
 }
+
+/* line 25, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy.scss */
 .hamburger--3dxy.is-active .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy.scss */
 .hamburger--3dxy.is-active .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 
 /*
- * 3DXY Reverse
- */
+   * 3DXY Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy-r.scss */
 .hamburger--3dxy-r .hamburger-box {
   perspective: 70px;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy-r.scss */
 .hamburger--3dxy-r .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 14, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy-r.scss */
 .hamburger--3dxy-r .hamburger-inner::before, .hamburger--3dxy-r .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy-r.scss */
 .hamburger--3dxy-r.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(180deg) rotateY(180deg) rotateZ(-180deg);
 }
+
+/* line 25, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy-r.scss */
 .hamburger--3dxy-r.is-active .hamburger-inner::before {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_3dxy-r.scss */
 .hamburger--3dxy-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 
 /*
- * Arrow
- */
+   * Arrow
+   */
+/* line 7, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrow.scss */
 .hamburger--arrow.is-active .hamburger-inner::before {
   transform: translate3d(-7px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
+
+/* line 11, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrow.scss */
 .hamburger--arrow.is-active .hamburger-inner::after {
   transform: translate3d(-7px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 /*
- * Arrow Right
- */
+   * Arrow Right
+   */
+/* line 7, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrow-r.scss */
 .hamburger--arrow-r.is-active .hamburger-inner::before {
   transform: translate3d(7px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
+
+/* line 11, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrow-r.scss */
 .hamburger--arrow-r.is-active .hamburger-inner::after {
   transform: translate3d(7px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 /*
- * Arrow Alt
- */
+   * Arrow Alt
+   */
+/* line 7, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt.scss */
 .hamburger--arrowalt .hamburger-inner::before {
   transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+/* line 12, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt.scss */
 .hamburger--arrowalt .hamburger-inner::after {
   transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+/* line 20, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt.scss */
 .hamburger--arrowalt.is-active .hamburger-inner::before {
   top: 0;
   transform: translate3d(-7px, -8.75px, 0) rotate(-45deg) scale(0.7, 1);
   transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt.scss */
 .hamburger--arrowalt.is-active .hamburger-inner::after {
   bottom: 0;
   transform: translate3d(-7px, 8.75px, 0) rotate(45deg) scale(0.7, 1);
@@ -244,19 +340,26 @@
 }
 
 /*
- * Arrow Alt Right
- */
+   * Arrow Alt Right
+   */
+/* line 7, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt-r.scss */
 .hamburger--arrowalt-r .hamburger-inner::before {
   transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+/* line 12, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt-r.scss */
 .hamburger--arrowalt-r .hamburger-inner::after {
   transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+/* line 20, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt-r.scss */
 .hamburger--arrowalt-r.is-active .hamburger-inner::before {
   top: 0;
   transform: translate3d(7px, -8.75px, 0) rotate(45deg) scale(0.7, 1);
   transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowalt-r.scss */
 .hamburger--arrowalt-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: translate3d(7px, 8.75px, 0) rotate(-45deg) scale(0.7, 1);
@@ -264,52 +367,70 @@
 }
 
 /*
- * Arrow Turn
- */
+   * Arrow Turn
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowturn.scss */
 .hamburger--arrowturn.is-active .hamburger-inner {
   transform: rotate(-180deg);
 }
+
+/* line 9, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowturn.scss */
 .hamburger--arrowturn.is-active .hamburger-inner::before {
   transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
+
+/* line 13, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowturn.scss */
 .hamburger--arrowturn.is-active .hamburger-inner::after {
   transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 /*
- * Arrow Turn Right
- */
+   * Arrow Turn Right
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowturn-r.scss */
 .hamburger--arrowturn-r.is-active .hamburger-inner {
   transform: rotate(-180deg);
 }
+
+/* line 9, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowturn-r.scss */
 .hamburger--arrowturn-r.is-active .hamburger-inner::before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
+
+/* line 13, ../../../code/html-css-reflection/src/scss/hamburgers/types/_arrowturn-r.scss */
 .hamburger--arrowturn-r.is-active .hamburger-inner::after {
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 /*
- * Boring
- */
+   * Boring
+   */
+/* line 7, ../../../code/html-css-reflection/src/scss/hamburgers/types/_boring.scss */
 .hamburger--boring .hamburger-inner, .hamburger--boring .hamburger-inner::before, .hamburger--boring .hamburger-inner::after {
   transition-property: none;
 }
+
+/* line 15, ../../../code/html-css-reflection/src/scss/hamburgers/types/_boring.scss */
 .hamburger--boring.is-active .hamburger-inner {
   transform: rotate(45deg);
 }
+
+/* line 18, ../../../code/html-css-reflection/src/scss/hamburgers/types/_boring.scss */
 .hamburger--boring.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
 }
+
+/* line 23, ../../../code/html-css-reflection/src/scss/hamburgers/types/_boring.scss */
 .hamburger--boring.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
 }
 
 /*
- * Collapse
- */
+   * Collapse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse.scss */
 .hamburger--collapse .hamburger-inner {
   top: auto;
   bottom: 0;
@@ -317,23 +438,33 @@
   transition-delay: 0.13s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 13, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse.scss */
 .hamburger--collapse .hamburger-inner::after {
   top: -18px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
+
+/* line 19, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse.scss */
 .hamburger--collapse .hamburger-inner::before {
   transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 26, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse.scss */
 .hamburger--collapse.is-active .hamburger-inner {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
   transition-delay: 0.22s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 31, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse.scss */
 .hamburger--collapse.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
 }
+
+/* line 38, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse.scss */
 .hamburger--collapse.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(-90deg);
@@ -341,8 +472,9 @@
 }
 
 /*
- * Collapse Reverse
- */
+   * Collapse Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse-r.scss */
 .hamburger--collapse-r .hamburger-inner {
   top: auto;
   bottom: 0;
@@ -350,23 +482,33 @@
   transition-delay: 0.13s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 13, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse-r.scss */
 .hamburger--collapse-r .hamburger-inner::after {
   top: -18px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
+
+/* line 19, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse-r.scss */
 .hamburger--collapse-r .hamburger-inner::before {
   transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 26, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse-r.scss */
 .hamburger--collapse-r.is-active .hamburger-inner {
   transform: translate3d(0, -9px, 0) rotate(45deg);
   transition-delay: 0.22s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 31, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse-r.scss */
 .hamburger--collapse-r.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
 }
+
+/* line 38, ../../../code/html-css-reflection/src/scss/hamburgers/types/_collapse-r.scss */
 .hamburger--collapse-r.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(90deg);
@@ -374,92 +516,127 @@
 }
 
 /*
- * Elastic
- */
+   * Elastic
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic.scss */
 .hamburger--elastic .hamburger-inner {
   top: 1.5px;
   transition-duration: 0.275s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/* line 11, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic.scss */
 .hamburger--elastic .hamburger-inner::before {
   top: 9px;
   transition: opacity 0.125s 0.275s ease;
 }
+
+/* line 16, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic.scss */
 .hamburger--elastic .hamburger-inner::after {
   top: 18px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/* line 23, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic.scss */
 .hamburger--elastic.is-active .hamburger-inner {
   transform: translate3d(0, 9px, 0) rotate(135deg);
   transition-delay: 0.075s;
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic.scss */
 .hamburger--elastic.is-active .hamburger-inner::before {
   transition-delay: 0s;
   opacity: 0;
 }
+
+/* line 34, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic.scss */
 .hamburger--elastic.is-active .hamburger-inner::after {
   transform: translate3d(0, -18px, 0) rotate(-270deg);
   transition-delay: 0.075s;
 }
 
 /*
- * Elastic Reverse
- */
+   * Elastic Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic-r.scss */
 .hamburger--elastic-r .hamburger-inner {
   top: 1.5px;
   transition-duration: 0.275s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/* line 11, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic-r.scss */
 .hamburger--elastic-r .hamburger-inner::before {
   top: 9px;
   transition: opacity 0.125s 0.275s ease;
 }
+
+/* line 16, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic-r.scss */
 .hamburger--elastic-r .hamburger-inner::after {
   top: 18px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/* line 23, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic-r.scss */
 .hamburger--elastic-r.is-active .hamburger-inner {
   transform: translate3d(0, 9px, 0) rotate(-135deg);
   transition-delay: 0.075s;
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic-r.scss */
 .hamburger--elastic-r.is-active .hamburger-inner::before {
   transition-delay: 0s;
   opacity: 0;
 }
+
+/* line 34, ../../../code/html-css-reflection/src/scss/hamburgers/types/_elastic-r.scss */
 .hamburger--elastic-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -18px, 0) rotate(270deg);
   transition-delay: 0.075s;
 }
 
 /*
- * Emphatic
- */
+   * Emphatic
+   */
+/* line 5, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic {
   overflow: hidden;
 }
+
+/* line 8, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic .hamburger-inner {
   transition: background-color 0.125s 0.175s ease-in;
 }
+
+/* line 11, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic .hamburger-inner::before {
   left: 0;
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
 }
+
+/* line 18, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic .hamburger-inner::after {
   top: 9px;
   right: 0;
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
+
+/* line 28, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
+
+/* line 33, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic.is-active .hamburger-inner::before {
   left: -70px;
   top: -70px;
   transform: translate3d(70px, 70px, 0) rotate(45deg);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+/* line 42, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic.scss */
 .hamburger--emphatic.is-active .hamburger-inner::after {
   right: -70px;
   top: -70px;
@@ -468,34 +645,47 @@
 }
 
 /*
- * Emphatic Reverse
- */
+   * Emphatic Reverse
+   */
+/* line 5, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r {
   overflow: hidden;
 }
+
+/* line 8, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r .hamburger-inner {
   transition: background-color 0.125s 0.175s ease-in;
 }
+
+/* line 11, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r .hamburger-inner::before {
   left: 0;
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
 }
+
+/* line 18, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r .hamburger-inner::after {
   top: 9px;
   right: 0;
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
+
+/* line 28, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
+
+/* line 33, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r.is-active .hamburger-inner::before {
   left: -70px;
   top: 70px;
   transform: translate3d(70px, -70px, 0) rotate(-45deg);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+/* line 42, ../../../code/html-css-reflection/src/scss/hamburgers/types/_emphatic-r.scss */
 .hamburger--emphatic-r.is-active .hamburger-inner::after {
   right: -70px;
   top: 70px;
@@ -504,97 +694,137 @@
 }
 
 /*
- * Minus
- */
+   * Minus
+   */
+/* line 7, ../../../code/html-css-reflection/src/scss/hamburgers/types/_minus.scss */
 .hamburger--minus .hamburger-inner::before, .hamburger--minus .hamburger-inner::after {
-  transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
+  transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
 }
+
+/* line 17, ../../../code/html-css-reflection/src/scss/hamburgers/types/_minus.scss */
 .hamburger--minus.is-active .hamburger-inner::before, .hamburger--minus.is-active .hamburger-inner::after {
   opacity: 0;
-  transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
+  transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
 }
+
+/* line 24, ../../../code/html-css-reflection/src/scss/hamburgers/types/_minus.scss */
 .hamburger--minus.is-active .hamburger-inner::before {
   top: 0;
 }
+
+/* line 28, ../../../code/html-css-reflection/src/scss/hamburgers/types/_minus.scss */
 .hamburger--minus.is-active .hamburger-inner::after {
   bottom: 0;
 }
 
 /*
- * Slider
- */
+   * Slider
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider.scss */
 .hamburger--slider .hamburger-inner {
   top: 1.5px;
 }
+
+/* line 9, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider.scss */
 .hamburger--slider .hamburger-inner::before {
   top: 9px;
   transition-property: transform, opacity;
   transition-timing-function: ease;
   transition-duration: 0.15s;
 }
+
+/* line 16, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider.scss */
 .hamburger--slider .hamburger-inner::after {
   top: 18px;
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider.scss */
 .hamburger--slider.is-active .hamburger-inner {
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider.scss */
 .hamburger--slider.is-active .hamburger-inner::before {
   transform: rotate(-45deg) translate3d(-5px, -6px, 0);
   opacity: 0;
 }
+
+/* line 32, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider.scss */
 .hamburger--slider.is-active .hamburger-inner::after {
   transform: translate3d(0, -18px, 0) rotate(-90deg);
 }
 
 /*
- * Slider Reverse
- */
+   * Slider Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider-r.scss */
 .hamburger--slider-r .hamburger-inner {
   top: 1.5px;
 }
+
+/* line 9, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider-r.scss */
 .hamburger--slider-r .hamburger-inner::before {
   top: 9px;
   transition-property: transform, opacity;
   transition-timing-function: ease;
   transition-duration: 0.15s;
 }
+
+/* line 16, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider-r.scss */
 .hamburger--slider-r .hamburger-inner::after {
   top: 18px;
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider-r.scss */
 .hamburger--slider-r.is-active .hamburger-inner {
   transform: translate3d(0, 9px, 0) rotate(-45deg);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider-r.scss */
 .hamburger--slider-r.is-active .hamburger-inner::before {
   transform: rotate(45deg) translate3d(5px, -6px, 0);
   opacity: 0;
 }
+
+/* line 32, ../../../code/html-css-reflection/src/scss/hamburgers/types/_slider-r.scss */
 .hamburger--slider-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -18px, 0) rotate(90deg);
 }
 
 /*
- * Spin
- */
+   * Spin
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin.scss */
 .hamburger--spin .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin.scss */
 .hamburger--spin .hamburger-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
+
+/* line 15, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin.scss */
 .hamburger--spin .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin.scss */
 .hamburger--spin.is-active .hamburger-inner {
   transform: rotate(225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin.scss */
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
+
+/* line 34, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin.scss */
 .hamburger--spin.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
@@ -602,28 +832,39 @@
 }
 
 /*
- * Spin Reverse
- */
+   * Spin Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin-r.scss */
 .hamburger--spin-r .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin-r.scss */
 .hamburger--spin-r .hamburger-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
+
+/* line 15, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin-r.scss */
 .hamburger--spin-r .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin-r.scss */
 .hamburger--spin-r.is-active .hamburger-inner {
   transform: rotate(-225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin-r.scss */
 .hamburger--spin-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
+
+/* line 34, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spin-r.scss */
 .hamburger--spin-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(90deg);
@@ -631,29 +872,40 @@
 }
 
 /*
- * Spring
- */
+   * Spring
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring.scss */
 .hamburger--spring .hamburger-inner {
   top: 1.5px;
   transition: background-color 0s 0.13s linear;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring.scss */
 .hamburger--spring .hamburger-inner::before {
   top: 9px;
   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 16, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring.scss */
 .hamburger--spring .hamburger-inner::after {
   top: 18px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 24, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring.scss */
 .hamburger--spring.is-active .hamburger-inner {
   transition-delay: 0.22s;
   background-color: transparent !important;
 }
+
+/* line 28, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring.scss */
 .hamburger--spring.is-active .hamburger-inner::before {
   top: 0;
   transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 9px, 0) rotate(45deg);
 }
+
+/* line 35, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring.scss */
 .hamburger--spring.is-active .hamburger-inner::after {
   top: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -661,8 +913,9 @@
 }
 
 /*
- * Spring Reverse
- */
+   * Spring Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring-r.scss */
 .hamburger--spring-r .hamburger-inner {
   top: auto;
   bottom: 0;
@@ -670,23 +923,33 @@
   transition-delay: 0s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 13, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring-r.scss */
 .hamburger--spring-r .hamburger-inner::after {
   top: -18px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
 }
+
+/* line 19, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring-r.scss */
 .hamburger--spring-r .hamburger-inner::before {
   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 26, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring-r.scss */
 .hamburger--spring-r.is-active .hamburger-inner {
   transform: translate3d(0, -9px, 0) rotate(-45deg);
   transition-delay: 0.22s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 31, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring-r.scss */
 .hamburger--spring-r.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
 }
+
+/* line 38, ../../../code/html-css-reflection/src/scss/hamburgers/types/_spring-r.scss */
 .hamburger--spring-r.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(90deg);
@@ -694,27 +957,38 @@
 }
 
 /*
- * Stand
- */
+   * Stand
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand.scss */
 .hamburger--stand .hamburger-inner {
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand.scss */
 .hamburger--stand .hamburger-inner::before {
   transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 15, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand.scss */
 .hamburger--stand .hamburger-inner::after {
   transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand.scss */
 .hamburger--stand.is-active .hamburger-inner {
   transform: rotate(90deg);
   background-color: transparent !important;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand.scss */
 .hamburger--stand.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(-45deg);
   transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 36, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand.scss */
 .hamburger--stand.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(45deg);
@@ -722,27 +996,38 @@
 }
 
 /*
- * Stand Reverse
- */
+   * Stand Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand-r.scss */
 .hamburger--stand-r .hamburger-inner {
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand-r.scss */
 .hamburger--stand-r .hamburger-inner::before {
   transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 15, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand-r.scss */
 .hamburger--stand-r .hamburger-inner::after {
   transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand-r.scss */
 .hamburger--stand-r.is-active .hamburger-inner {
   transform: rotate(-90deg);
   background-color: transparent !important;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
+
+/* line 29, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand-r.scss */
 .hamburger--stand-r.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(-45deg);
   transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 36, ../../../code/html-css-reflection/src/scss/hamburgers/types/_stand-r.scss */
 .hamburger--stand-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(45deg);
@@ -750,28 +1035,39 @@
 }
 
 /*
- * Squeeze
- */
+   * Squeeze
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_squeeze.scss */
 .hamburger--squeeze .hamburger-inner {
   transition-duration: 0.075s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_squeeze.scss */
 .hamburger--squeeze .hamburger-inner::before {
-  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
+
+/* line 15, ../../../code/html-css-reflection/src/scss/hamburgers/types/_squeeze.scss */
 .hamburger--squeeze .hamburger-inner::after {
   transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
+/* line 22, ../../../code/html-css-reflection/src/scss/hamburgers/types/_squeeze.scss */
 .hamburger--squeeze.is-active .hamburger-inner {
   transform: rotate(45deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_squeeze.scss */
 .hamburger--squeeze.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
+
+/* line 34, ../../../code/html-css-reflection/src/scss/hamburgers/types/_squeeze.scss */
 .hamburger--squeeze.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
@@ -779,69 +1075,101 @@
 }
 
 /*
- * Vortex
- */
+   * Vortex
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex .hamburger-inner {
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
   transition-duration: 0s;
   transition-delay: 0.1s;
   transition-timing-function: linear;
 }
+
+/* line 17, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex .hamburger-inner::before {
   transition-property: top, opacity;
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex .hamburger-inner::after {
   transition-property: bottom, transform;
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex.is-active .hamburger-inner {
   transform: rotate(765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+/* line 31, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
   transition-delay: 0s;
 }
+
+/* line 36, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
 }
+
+/* line 41, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex.scss */
 .hamburger--vortex.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(90deg);
 }
 
 /*
- * Vortex Reverse
- */
+   * Vortex Reverse
+   */
+/* line 6, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r .hamburger-inner {
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+/* line 10, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r .hamburger-inner::before, .hamburger--vortex-r .hamburger-inner::after {
   transition-duration: 0s;
   transition-delay: 0.1s;
   transition-timing-function: linear;
 }
+
+/* line 17, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r .hamburger-inner::before {
   transition-property: top, opacity;
 }
+
+/* line 21, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r .hamburger-inner::after {
   transition-property: bottom, transform;
 }
+
+/* line 27, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r.is-active .hamburger-inner {
   transform: rotate(-765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+/* line 31, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r.is-active .hamburger-inner::before, .hamburger--vortex-r.is-active .hamburger-inner::after {
   transition-delay: 0s;
 }
+
+/* line 36, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
 }
+
+/* line 41, ../../../code/html-css-reflection/src/scss/hamburgers/types/_vortex-r.scss */
 .hamburger--vortex-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
 }
+
+/*# sourceMappingURL=hamburgers.css.map */
