@@ -5,11 +5,11 @@ const babel = require('gulp-babel')
 const  paths = {
   styles: {
     src: './src/scss/**/*.scss',
-    dest: './css/'
+    dest: './public/css/'
   },
   scripts : {
     src: ['./src/js/app.js', './src/js/pushy.js'],
-    dest: './js/'
+    dest: './public/js/'
   }
 }
 

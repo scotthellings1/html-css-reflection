@@ -583,7 +583,7 @@
         <div class="container">
             <ul>
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li>Our Offices</li>
             </ul>
