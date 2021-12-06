@@ -2,10 +2,13 @@
     background: #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, .10);
     padding: 14px 0 13px;
-    margin-top: 4.8rem;
+    margin-top: 10.5rem;
     border-top: 1px solid black;
-    @include mq(md) {
-        margin-top: 11.5rem;
+  @include mq(sm) {
+    margin-top: 6.5rem;
+  }
+  @include mq(md) {
+        margin-top: 13rem;
     }
  ul {
      list-style: none;
@@ -105,12 +108,14 @@
 .contact-info {
     font-weight: 600;
     color: $grey-700;
+  max-width: 100%;
     .email, .email-address, .business-hours, .times, .out-of-hours {
         margin-bottom: 25px;
     }
     .email-address a {
         color: $web-300;
         font-size: 1.625rem;
+        overflow: hidden;
         &:hover {
             text-decoration: underline;
         }

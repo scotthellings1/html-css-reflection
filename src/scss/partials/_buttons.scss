@@ -48,13 +48,13 @@
 }
 
 .btn {
-  @include button(article-b, $white, $support-300, $support-600, 0.6rem, 1rem, 1.125rem){
+  @include button(article-news, $white, $support-300, $support-600, 0.6rem, 1rem, 1.125rem){
     margin-top: 0.5rem;
   };
 }
 
 .btn {
-  @include button(article-g, $white, $marketing-300, $marketing-600, 0.6rem, 1rem, 1.125rem);
+  @include button(article-careers, $white, $marketing-300, $marketing-600, 0.6rem, 1rem, 1.125rem);
 }
 
 .btn {

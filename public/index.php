@@ -11,7 +11,7 @@
     <?php include __DIR__ . '/../inc/views/index/about.php'; ?>
     <?php include __DIR__ . '/../inc/views/index/news.php'; ?>
     <?php include __DIR__ . '/../inc/views/index/clients.php'; ?>
-    <?php include __DIR__ . '/../inc/views/index/newsletter.php'; ?>
+    <?php include __DIR__ . '/../inc/views/layout/newsletter.php'; ?>
     <?php include __DIR__ . '/../inc/views/layout/footer.php'; ?>
     <?php include __DIR__ . '/../inc/views/index/accreditations.php'; ?>
 

@@ -1018,24 +1018,24 @@ a {
   background: #ebebeb;
 }
 
-.btn-article-b {
+.btn-article-news {
   background: #4183D7;
   color: #fff;
   padding: 0.6rem 1rem;
   font-size: 1.125rem;
   margin-top: 0.5rem;
 }
-.btn-article-b:hover {
+.btn-article-news:hover {
   background: #286ABD;
 }
 
-.btn-article-g {
+.btn-article-careers {
   background: #2ECC71;
   color: #fff;
   padding: 0.6rem 1rem;
   font-size: 1.125rem;
 }
-.btn-article-g:hover {
+.btn-article-careers:hover {
   background: #24A25A;
 }
 
@@ -2383,10 +2383,16 @@ article {
     width: 47.9%;
     margin-bottom: 0;
   }
+  article:last-child {
+    display: none;
+  }
 }
 @media screen and (min-width: 1260px) {
   article {
     width: 31.5%;
+  }
+  article:last-child {
+    display: block;
   }
 }
 article .tag {
@@ -2405,10 +2411,10 @@ article .tag a {
 article .tag a:hover {
   text-decoration: underline;
 }
-article .tag-b {
+article .tag-news {
   background: #4183D7;
 }
-article .tag-g {
+article .tag-careers {
   background: #2ECC71;
 }
 article img {
@@ -2431,22 +2437,22 @@ article .card-container {
 article .article-body, article .meta {
   padding: 1.125rem 0;
 }
-article .article-link-b {
+article .article-link-news {
   color: #4183D7;
   font-weight: 600;
   display: inline-block;
   min-height: 3.3rem;
 }
-article .article-link-b:hover {
+article .article-link-news:hover {
   text-decoration: underline;
 }
-article .article-link-g {
+article .article-link-careers {
   color: #2ECC71;
   font-weight: 600;
   display: inline-block;
   min-height: 3.3rem;
 }
-article .article-link-g:hover {
+article .article-link-careers:hover {
   text-decoration: underline;
 }
 article .body-text {
@@ -2765,6 +2771,7 @@ footer .socials {
   flex-wrap: nowrap;
   font-size: 0.9rem;
   margin-top: -8px;
+  overflow: hidden;
 }
 footer .socials a {
   color: #fff;
@@ -2823,12 +2830,17 @@ footer .socials i {
   background: #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
   padding: 14px 0 13px;
-  margin-top: 4.8rem;
+  margin-top: 10.5rem;
   border-top: 1px solid black;
+}
+@media screen and (min-width: 768px) {
+  .breadcrumbs {
+    margin-top: 6.5rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .breadcrumbs {
-    margin-top: 11.5rem;
+    margin-top: 13rem;
   }
 }
 .breadcrumbs ul {
@@ -2934,6 +2946,7 @@ footer .socials i {
 .contact-info {
   font-weight: 600;
   color: #333645;
+  max-width: 100%;
 }
 .contact-info .email, .contact-info .email-address, .contact-info .business-hours, .contact-info .times, .contact-info .out-of-hours {
   margin-bottom: 25px;
@@ -2941,6 +2954,7 @@ footer .socials i {
 .contact-info .email-address a {
   color: #926FB1;
   font-size: 1.625rem;
+  overflow: hidden;
 }
 .contact-info .email-address a:hover {
   text-decoration: underline;
