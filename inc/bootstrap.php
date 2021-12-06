@@ -1,11 +1,12 @@
 <?php
 require __DIR__ . "/../vendor/autoload.php";
+require __DIR__ . '/config/dotenv.php';
 require __DIR__ . "/functions.php";
+require __DIR__ . "/config/helpers.php";
 
-try {
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
-    $dotenv->load();
-//    $dotenv->required(["SQL_HOST", "SQL_USER", "SQL_PASS"]);
-} catch (Exception $e) {
-    echo "Missing required environment variables.";
-}
+
+    error_reporting(E_ALL);
+    ini_set("display_errors", '1');
+    ini_set("html_errors", '1');
+
+require __DIR__ . "/config/connection.php";
