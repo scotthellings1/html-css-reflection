@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/user/43cca32b-7eea-4300-8ffa-d12846984b33/project/7eab0ea5-5d29-4862-951b-15f96bce145c.svg?style=for-the-badge)](https://wakatime.com/badge/user/43cca32b-7eea-4300-8ffa-d12846984b33/project/7eab0ea5-5d29-4862-951b-15f96bce145c)
 # Netmatters PHP reflection
 Added PHP to my HTML / CSS / JS relection of the Netmatters homepage 
 
