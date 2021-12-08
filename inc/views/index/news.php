@@ -8,7 +8,6 @@
     </div>
 
     <div class="container">
-
         <div class="articles">
           <?php
           try {
@@ -22,6 +21,7 @@
           }
           ?>
         </div>
+
     </div>
 </section>
 <!--    end latest news  section-->

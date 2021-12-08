@@ -1,56 +1,101 @@
+<?php
+$emptyFields = [];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+// get values from the form and store as an associative array
+  $formData["name"] = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING));
+  $formData["email"] = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+  $formData["phone"] = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
+  $formData["subject"] = trim(filter_input(INPUT_POST, "subject", FILTER_SANITIZE_SPECIAL_CHARS));
+  $formData["message"] = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_SPECIAL_CHARS));
+  $formData["marketing"] = trim(filter_input(INPUT_POST, "marketing", FILTER_SANITIZE_NUMBER_INT));
+// if no value for marketing set its value to 0
+
+  if (empty($formData['marketing'])) {
+    $formData['marketing'] = 0;
+  }
+  $response = submitContactForm($formData);
+  if (is_array($response)) {
+    $emptyFields = $response;
+
+  } elseif ($response)  {
+//
+  }
+}
+?>
+
 <section class="contact-info">
-    <div class="container">
-        <div class="contact-info">
-            <p class="email">
-                Email us on:
-            </p>
-            <p class="email-address">
-                <a href="mailto:sales@netmatters.com">sales@netmatters.com</a>
-            </p>
-            <p class="business-hours">
-                Business hours:
-            </p>
-            <p class="times">
-                Monday - Friday 07:00 - 18:00
-            </p>
-            <div class="out-of-hours">
-                <p>Out of Hours IT Support</p> <svg xmlns="http://www.w3.org/2000/svg" class="down-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
-                </svg>
+  <div class="container">
+    <div class="contact-info">
+      <p class="email">
+        Email us on:
+      </p>
+      <p class="email-address">
+        <a href="mailto:sales@netmatters.com">sales@netmatters.com</a>
+      </p>
+      <p class="business-hours">
+        Business hours:
+      </p>
+      <p class="times">
+        Monday - Friday 07:00 - 18:00
+      </p>
+      <div class="out-of-hours">
+        <p>Out of Hours IT Support</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="down-chevron" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/>
+        </svg>
 
-            </div>
-        </div>
-
+      </div>
     </div>
+
+  </div>
 </section>
 
 <div class="container">
-    <section class="contact-form">
-        <div class="input-group">
-            <label class="required" for="name">Your Name </label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div class="input-group">
-            <label class="required" for="email">Your Email </label>
-            <input type="text" id="email" name="email">
-        </div>
-        <div class="input-group">
-            <label class="required" for="phone">Your Telephone Number </label>
-            <input type="text" id="phone" name="phone">
-        </div>
-        <div class="input-group">
-            <label class="required" for="subject">Subject </label>
-            <input type="text" id="subject" name="subject">
-        </div>
-        <div class="input-group message">
-            <label class="required" for="message">Message </label>
-            <textarea name="message" id="message" cols="" rows=""></textarea>
-        </div>
-        <div class="label">
-            <label for="marketing">
+  <section class="contact-form">
+
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+      <?php
+      if ($emptyFields) {
+        foreach ($emptyFields as $emptyField) {
+          echo "<span class=''> <ul> " . renderEmptyFieldError($emptyField) . "</ul></span>";
+        }
+      }
+      ?>
+      <div class="input-group">
+        <label class="required" for="name">Your Name </label>
+        <input type="text" id="name" name="name" value="<?php if (isset($formData["name"])) { echo $formData["name"]; }
+        ?>">
+      </div>
+      <div class="input-group">
+        <label class="required" for="email">Your Email </label>
+        <input type="text" id="email" name="email" value="<?php if (isset($formData["email"])) { echo
+        $formData["email"]; }
+        ?>">
+      </div>
+      <div class="input-group">
+        <label class="required" for="phone">Your Telephone Number </label>
+        <input type="text" id="phone" name="phone" value="<?php if (isset($formData["phone"])) { echo
+        $formData["phone"]; }
+        ?>">
+      </div>
+      <div class="input-group">
+        <label class="required" for="subject">Subject </label>
+        <input type="text" id="subject" name="subject" value="<?php if (isset($formData["subject"])) { echo
+        $formData["subject"]; }
+        ?>">
+      </div>
+      <div class="input-group message">
+        <label class="required" for="message">Message </label>
+        <textarea name="message" id="message" cols="" rows=""><?php if (isset($formData["message"])) { echo
+          $formData["message"]; }
+          ?></textarea>
+      </div>
+      <div class="label">
+        <label for="marketing">
                 <span class="check-holder">
                     <span class="checkbox">
-                    <input class="cb" id="marketing" name="marketing" type="checkbox">
+                    <input class="cb" id="marketing" name="marketing" type="checkbox" value="1">
                     <span class="check"></span>
                     </span>
                     <span class="text">
@@ -60,10 +105,11 @@
                     </span>
                     </span>
                 </span>
-            </label>
-        </div>
-        <div class="submit">
-            <a href="#" class="btn btn-service-web">send enquiry</a>
-        </div>
-    </section>
+        </label>
+      </div>
+      <div class="submit">
+        <button type="submit" class="btn btn-service-web">send enquiry</button>
+      </div>
+    </form>
+  </section>
 </div>

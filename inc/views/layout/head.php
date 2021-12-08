@@ -1,5 +1,4 @@
-<?php require __DIR__ . '/../../bootstrap.php';?>
-
+<?php require __DIR__ . '/../../bootstrap.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,7 +20,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin=""/>
-  <title><?php echo env('TITLE'); ?></title>
+  <title><?php  echo $pageTitle ??  env('TITLE'); ?></title>
     <script src="https://kit.fontawesome.com/ae8cc9698e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>

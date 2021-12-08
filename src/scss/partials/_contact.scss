@@ -152,12 +152,12 @@
       }
     &.message {
         width: 100%;
-        margin-right: 1.75rem;
+        margin-right: 0rem;
     }
-    &:nth-child(2) {
+    &:nth-of-type(2) {
         margin-right: 0;
     }
-    &:nth-child(4) {
+    &:nth-of-type(4) {
         margin-right: 0;
     }
 
@@ -190,5 +190,16 @@
   }
   .submit {
       margin: 40px 0 13px 0;
+  }
+}
+
+.form-alert {
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  &-error{
+    border: 1px solid #ebccd1;
+    color: #a94442;
+    background: #f2dede;
   }
 }

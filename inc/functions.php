@@ -8,7 +8,7 @@ function getLatestNewsItems() {
         $results = $db->prepare($sql);
         $results->execute();
     } catch (\Exception $e) {
-        return $e->getMessage();
+        return 'failed to get news articles ' . $e->getMessage();
     }
     return $results->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -17,7 +17,7 @@ function renderNewsItem(array $item) {
     $date_published = new DateTime($item["published_at"]);
     // Prepare variables for use in heredoc
     $date = $date_published->format("jS F Y");
-    $output = <<<EOD
+    $output = <<<EOHTML
  <article>
     <div class="tag tag-{$item['tag']}">
         <a href="#">{$item['tag']}</a>
@@ -44,7 +44,28 @@ function renderNewsItem(array $item) {
         </div>
     </div>
 </article>
-EOD;
-    return $output;
+EOHTML;
+return $output;
 
+}
+function renderEmptyFieldError($error){
+    $output = "<li class='form-alert form-alert-error'>". 'The ' . $error . " field is required.</li>";
+    return $output;
+}
+
+function submitContactForm($formData) {
+    $contactFormSubmission = new StoreContactForm($formData);
+
+    // Check for empty fields
+    if ($contactFormSubmission->hasEmptyFields()) {
+        $emptyFields = $contactFormSubmission->hasEmptyFields();
+        return $emptyFields;
+    }
+    elseif (empty($emptyFields) && $contactFormSubmission->store() ) {
+
+        return true;
+    }
+    else {
+        return false;
+    }
 }

@@ -1,4 +1,3 @@
-<!--    sidenav container-->
 <div class="side-nav pushy pushy-right " data-menu-btn-selector=".btn-menu" data-container-selector=".main">
     <div class="sidenav-container pushy-content" >
         <div class="upper">
