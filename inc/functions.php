@@ -1,5 +1,7 @@
 <?php
 
+use Symfony\Component\HttpFoundation\Response;
+
 function getLatestNewsItems() {
     global $db;
 
@@ -48,24 +50,51 @@ EOHTML;
 return $output;
 
 }
+
+function redirect($path) {
+    $response = Response::create(null, Response::HTTP_FOUND, ['Location' => $path]);
+    $response->send();
+    exit;
+}
 function renderEmptyFieldError($error){
     $output = "<li class='form-alert form-alert-error'>". 'The ' . $error . " field is required.</li>";
     return $output;
 }
+function flash($key,$message){
+    global $session;
+    $session->getFlashBag()->add($key, $message);
+}
+function renderFormSuccess()
+{
+    global $session;
 
-function submitContactForm($formData) {
+    if (!$session->getFlashBag()->has('success')) {
+        return false;
+    }
+
+    $messages = $session->getFlashBag()->get('success');
+
+    $response = '<div class=" form-alert form-alert-success">';
+    foreach ($messages as $message) {
+        $response .= "{$message}";
+    }
+    $response .= '</div>';
+
+    return $response;
+}
+
+function submitContactForm($formData)
+{
     $contactFormSubmission = new StoreContactForm($formData);
 
     // Check for empty fields
     if ($contactFormSubmission->hasEmptyFields()) {
         $emptyFields = $contactFormSubmission->hasEmptyFields();
         return $emptyFields;
-    }
-    elseif (empty($emptyFields) && $contactFormSubmission->store() ) {
+    } elseif (empty($emptyFields) && $contactFormSubmission->store()) {
 
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }

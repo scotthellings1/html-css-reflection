@@ -1,27 +1,4 @@
-<?php
-$emptyFields = [];
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-// get values from the form and store as an associative array
-  $formData["name"] = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING));
-  $formData["email"] = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
-  $formData["phone"] = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
-  $formData["subject"] = trim(filter_input(INPUT_POST, "subject", FILTER_SANITIZE_SPECIAL_CHARS));
-  $formData["message"] = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_SPECIAL_CHARS));
-  $formData["marketing"] = trim(filter_input(INPUT_POST, "marketing", FILTER_SANITIZE_NUMBER_INT));
-// if no value for marketing set its value to 0
 
-  if (empty($formData['marketing'])) {
-    $formData['marketing'] = 0;
-  }
-  $response = submitContactForm($formData);
-  if (is_array($response)) {
-    $emptyFields = $response;
-
-  } elseif ($response)  {
-//
-  }
-}
-?>
 
 <section class="contact-info">
   <div class="container">
@@ -56,7 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
       <?php
-      if ($emptyFields) {
+         echo renderFormSuccess();
+
+
+      if  ($emptyFields) {
         foreach ($emptyFields as $emptyField) {
           echo "<span class=''> <ul> " . renderEmptyFieldError($emptyField) . "</ul></span>";
         }

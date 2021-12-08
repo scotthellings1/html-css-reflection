@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b398c1e978b8d9b7f4225359e7d0616",
+    "content-hash": "bcfc4ca658bc4b7ad6a077caff855743",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -70,16 +70,16 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "5455cb38aed4523f99977c4a12ef19da4bfe2a28"
+                "reference": "eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/5455cb38aed4523f99977c4a12ef19da4bfe2a28",
-                "reference": "5455cb38aed4523f99977c4a12ef19da4bfe2a28",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15",
+                "reference": "eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
-                "phpunit/phpunit": "^6.5.14 || ^7.0.20 || ^8.5.19 || ^9.5.8"
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20 || ^8.5.19 || ^9.5.8"
             },
             "type": "library",
             "extra": {
@@ -107,11 +107,13 @@
             "authors": [
                 {
                     "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh"
                 },
                 {
                     "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 }
             ],
             "description": "Option Type for PHP",
@@ -123,7 +125,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.8.0"
+                "source": "https://github.com/schmittjoh/php-option/tree/1.8.1"
             },
             "funding": [
                 {
@@ -135,7 +137,63 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-28T21:27:29+00:00"
+            "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v3.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "f21e5a8b88274b7720779aa88f9c02c6d6ec08d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/f21e5a8b88274b7720779aa88f9c02c6d6ec08d7",
+                "reference": "f21e5a8b88274b7720779aa88f9c02c6d6ec08d7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.1"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.8|~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/http-foundation/tree/3.1"
+            },
+            "time": "2016-10-24T15:52:44+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

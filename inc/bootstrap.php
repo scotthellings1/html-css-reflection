@@ -5,7 +5,8 @@ require __DIR__ . "/../vendor/autoload.php";
 require __DIR__ . '/config/dotenv.php';
 require __DIR__ . "/functions.php";
 require __DIR__ . "/config/helpers.php";
-session_start();
+$session = new \Symfony\Component\HttpFoundation\Session\Session();
+$session->start();
 
     error_reporting(E_ALL);
     ini_set("display_errors", '1');
