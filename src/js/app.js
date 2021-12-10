@@ -58,3 +58,37 @@ overlay.addEventListener('click', () => {
   body.style.overflowY = "auto"
   hamburger.classList.toggle('is-active')
 })
+
+const map = L.map('map-c', {
+  center: [52.2349, 0.1534],
+  preferCanvas: true,
+  zoom: 16
+});
+
+const map1 = L.map('map-w', {
+  center: [52.5759, 1.1363],
+  zoom: 16
+});
+
+const map2 = L.map('map-gy', {
+  center: [52.5558, 1.713],
+  zoom: 16
+});
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map1);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map2)
+
+L.marker([52.2349, 0.1534]).addTo(map);
+
+L.marker([52.5759, 1.1363]).addTo(map1);
+
+L.marker([52.5558, 1.713]).addTo(map2);

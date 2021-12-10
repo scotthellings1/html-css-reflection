@@ -26,6 +26,21 @@ class StoreContactForm
 
         return $emptyFields;
     }
+    public function isValidEmail()
+    {
+        return filter_var($this->email, FILTER_VALIDATE_EMAIL);
+    }
+
+    public function isValidPhone()
+    {
+        $regEx = "/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/";
+
+        if (!preg_match($regEx, $this->phone) || strlen($this->phone) < 11) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     public function store()
     {
@@ -46,4 +61,6 @@ class StoreContactForm
         }
         return true;
     }
+
+
 }

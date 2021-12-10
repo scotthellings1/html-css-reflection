@@ -1,14 +1,14 @@
 <header>
     <div class="header-container">
         <div class="logo">
-            <a href="#">
+            <a href="/">
                 <img src="img/Netmatters.png" alt="">
             </a>
         </div>
         <div class="actions">
             <div class="buttons">
                 <a class="btn btn-primary hidden-md" href="#"> <i class="fas fa-mouse"></i>support</a>
-                <a class="btn btn-secondary hidden-md" href="#"><i class="far fa-paper-plane"></i>contact</a>
+                <a class="btn btn-secondary hidden-md" href="/contact.php"><i class="far fa-paper-plane"></i>contact</a>
             </div>
             <div class="search">
                 <input type="text" class="search-box" placeholder="Search...">

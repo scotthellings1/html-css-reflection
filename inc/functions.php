@@ -86,13 +86,27 @@ function renderFormSuccess()
 function submitContactForm($formData)
 {
     $contactFormSubmission = new StoreContactForm($formData);
-
+    $emptyFields= [];
     // Check for empty fields
     if ($contactFormSubmission->hasEmptyFields()) {
         $emptyFields = $contactFormSubmission->hasEmptyFields();
         return $emptyFields;
-    } elseif (empty($emptyFields) && $contactFormSubmission->store()) {
+        }
+        // Validate email address with object method
+        if (!in_array("email", $emptyFields) && !$contactFormSubmission->isValidEmail()) {
+            $emptyFields[] = "email";
+        }
 
+        // Validate phone number with object method
+        if (!in_array("phone", $emptyFields) && !$contactFormSubmission->isValidPhone()) {
+            $emptyFields[] = "phone";
+        }
+
+    if (!empty($emptyFields)) {
+        return $emptyFields;
+        // If no invalid fields, call submitForm method, and return true if successfully sent
+    }
+    elseif (empty($emptyFields) && $contactFormSubmission->store()) {
         return true;
     } else {
         return false;
