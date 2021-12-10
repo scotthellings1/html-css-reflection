@@ -108,6 +108,10 @@
 .contact-info {
     font-weight: 600;
     color: $grey-700;
+  @include mq(lg) {
+    width: 33%;
+  }
+
   max-width: 100%;
     .email, .email-address, .business-hours, .times, .out-of-hours {
         margin-bottom: 25px;
@@ -127,16 +131,53 @@
     }
     .out-of-hours {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+      justify-content: center;
     }
 }
+.business-hours-toggle{
+  display: flex;
+  p {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.business-hours-dropdown {
+  display: none;
+  height: 0%;
+  overflow: hidden;
+  &.active {
+    display: block;
+    height: 100%;
 
+  }
+  p {
+    margin-top: 25px;
+    font-weight: 400;
+    line-height: 1.875rem;
+  }
+}
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  @include mq(lg) {
+    flex-direction: row-reverse;
+  }
+}
 .contact-form {
  background: #e6e7e9;
  padding: 30px;
  color: $grey-700;
+  max-height: 100%;
  border-radius: 10px;
  margin-bottom: 50px;
+  @include mq(lg) {
+    margin-right: 30px;
+    width: 66%;
+  }
  .input-group {
     display: flex;
     flex-direction: column;
@@ -147,8 +188,8 @@
     }
     @include mq(md) {
         display: inline-flex;
-        width: 48%;
-    
+        width: 47%;
+
       }
     &.message {
         width: 100%;
@@ -186,10 +227,12 @@
   }
   textarea {
       min-height: 100px;
+    width: 98%;
 
   }
   .submit {
       margin: 40px 0 13px 0;
+
   }
 }
 

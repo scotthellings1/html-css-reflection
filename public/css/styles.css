@@ -857,6 +857,11 @@
   box-sizing: border-box;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 input[type=text]:focus-visible {
   outline: none;
 }
@@ -2948,6 +2953,11 @@ footer .socials i {
   color: #333645;
   max-width: 100%;
 }
+@media screen and (min-width: 1260px) {
+  .contact-info {
+    width: 33%;
+  }
+}
 .contact-info .email, .contact-info .email-address, .contact-info .business-hours, .contact-info .times, .contact-info .out-of-hours {
   margin-bottom: 25px;
 }
@@ -2966,15 +2976,58 @@ footer .socials i {
 }
 .contact-info .out-of-hours {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.business-hours-toggle {
+  display: flex;
+}
+.business-hours-toggle p {
+  cursor: pointer;
+}
+.business-hours-toggle p:hover {
+  text-decoration: underline;
+}
+
+.business-hours-dropdown {
+  display: none;
+  height: 0%;
+  overflow: hidden;
+}
+.business-hours-dropdown.active {
+  display: block;
+  height: 100%;
+}
+.business-hours-dropdown p {
+  margin-top: 25px;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1260px) {
+  .contact-area {
+    flex-direction: row-reverse;
+  }
 }
 
 .contact-form {
   background: #e6e7e9;
   padding: 30px;
   color: #333645;
+  max-height: 100%;
   border-radius: 10px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1260px) {
+  .contact-form {
+    margin-right: 30px;
+    width: 66%;
+  }
 }
 .contact-form .input-group {
   display: flex;
@@ -2990,7 +3043,7 @@ footer .socials i {
 @media screen and (min-width: 992px) {
   .contact-form .input-group {
     display: inline-flex;
-    width: 48%;
+    width: 47%;
   }
 }
 .contact-form .input-group.message {
@@ -3024,6 +3077,7 @@ footer .socials i {
 }
 .contact-form textarea {
   min-height: 100px;
+  width: 98%;
 }
 .contact-form .submit {
   margin: 40px 0 13px 0;

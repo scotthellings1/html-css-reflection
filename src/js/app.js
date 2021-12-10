@@ -92,3 +92,9 @@ L.marker([52.2349, 0.1534]).addTo(map);
 L.marker([52.5759, 1.1363]).addTo(map1);
 
 L.marker([52.5558, 1.713]).addTo(map2);
+
+const outOfHoursToggle = document.querySelector('.business-hours-toggle')
+const outOfHoursDropdown = document.querySelector('.business-hours-dropdown')
+outOfHoursToggle.addEventListener('click', (e) =>{
+  outOfHoursDropdown.classList.toggle('active')
+})

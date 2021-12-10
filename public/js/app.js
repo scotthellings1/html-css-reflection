@@ -83,3 +83,8 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 L.marker([52.2349, 0.1534]).addTo(map);
 L.marker([52.5759, 1.1363]).addTo(map1);
 L.marker([52.5558, 1.713]).addTo(map2);
+var outOfHoursToggle = document.querySelector('.business-hours-toggle');
+var outOfHoursDropdown = document.querySelector('.business-hours-dropdown');
+outOfHoursToggle.addEventListener('click', function (e) {
+  outOfHoursDropdown.classList.toggle('active');
+});
