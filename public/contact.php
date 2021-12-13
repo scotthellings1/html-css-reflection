@@ -1,4 +1,3 @@
-
 <?php $pageTitle = 'Contact Us | Netmatters'; ?>
 <?php include __DIR__ . '/../inc/views/layout/head.php'; ?>
 <body class="">
